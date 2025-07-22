@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Module 01: Implement Information Protection",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab0_Ex0_Lab_Setup.md",
+        "Order": 1
+      },      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex1_compliance_roles.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex2_sensitive_information_types.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex3_sensitivity_labels.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex4_message_encryption.md",
+        "Order": 5
+      }
+    ]
+  }
+]

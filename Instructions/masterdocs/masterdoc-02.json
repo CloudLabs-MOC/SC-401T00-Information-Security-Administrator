@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Module 02: Implement Data Loss Prevention",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab0_Ex0_Lab_Setup.md",
+        "Order": 1
+      },      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab2_Ex1_DLP_policies.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab2_Ex2_endpoint_DLP.md",
+        "Order": 3
+      }
+    ]
+  }
+]

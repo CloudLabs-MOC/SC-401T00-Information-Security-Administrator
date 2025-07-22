@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Module 06: Audit and search activity in Microsoft Purview",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab0_Ex0_Lab_Setup.md",
+        "Order": 1
+      },      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab6_Ex1_audit.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab6_Ex2_content_search.md",
+        "Order": 3
+      }
+    ]
+  }
+]

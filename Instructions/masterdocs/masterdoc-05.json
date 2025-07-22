@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Module 05: Implement and manage retention",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab0_Ex0_Lab_Setup.md",
+        "Order": 1
+      },      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab5_Ex1_retention.md",
+        "Order": 2
+      }
+    ]
+  }
+]
