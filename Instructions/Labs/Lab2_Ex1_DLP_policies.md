@@ -37,6 +37,8 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
 1. On the **Policies** page, select **+ Create policy** to start the configuration for creating a new data loss prevention policy.
 
+1. On the **Choose what type of data to protect** page, select **Data stored in connected sources** then select **Next**.
+
 1. On the **Start with a template or create a custom policy** page, select **Custom** as the category, then select **Custom policy** under **Regulations**.
 
 1. Select **Next**.
@@ -74,15 +76,15 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
 1. Under **Actions**, select **+ Add an action** > **Restrict access or encrypt the content in Microsoft 365 locations**.
 
-1. In the **Restrict access or encrypt the content** section:
+1. In the **Restrict access or encrypt the content in Microsoft 365 locations** section:
     - Select **Block only people outside your organization**.
 
 1. Under **User notifications**:
     - Turn on the toggle for **Use notifications to inform your users and help educate them on the proper use of sensitive info.**.
-    - Select the checkbox for **Notify users in Office 365 service with a policy tip**.
+    - Select the checkbox for **Notify users in Office 365 service with a policy tip or email notifications**.
 
 1. Under **User overrides**:
-    - Select the checkbox for **Allow users to override policy restrictions** (Fabric, Exchange, SharePoint, OneDrive, and Teams).
+    - Select the checkbox for **Allow users to override policy restrictions in Fabric (including Power BI), Exchange, SharePoint, OneDrive, and Teams**.
     - Select the checkbox for **Require a business justification to override**.
 
 1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown:
@@ -216,7 +218,7 @@ Some file policies require access to inspect the contents of protected files. In
 
 1. On the left sidebar, select **System** > **Settings**, then select **Cloud Apps**.
 
-1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section. Under **Inspect protected files**, select **Grant permission** to enable file inspection.
+1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section. Under **Microsoft Information Protection**, select **Grant permission** to enable file inspection.
 
 1. Follow the prompt to allow the required permissions in Microsoft Entra ID, then you should see file inspection is **Active** in Microsoft Defender for Cloud Apps.
 
