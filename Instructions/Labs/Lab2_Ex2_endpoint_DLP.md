@@ -1,19 +1,17 @@
----
-lab:
-    title: 'Exercise 2 - Implement and manage endpoint DLP'
-    module: 'Module 2 - Implement Data Loss Prevention'
----
-
 # Lab 2 – Exercise 2 – Implement and manage endpoint DLP
+
+## Estimated Duration: 90 minutes
 
 Joni Sherman, the newly hired Information Security Administrator at Contoso Ltd., has been asked to strengthen DLP controls on company devices. Some employees have been copying sensitive customer information to USB drives, increasing the risk of data exposure. In this lab, Joni will configure an endpoint DLP policy to block these transfers.
 
-**Tasks**:
+## Lab Objectives
 
-1. Onboard a device for endpoint DLP
-1. Create an endpoint DLP policy
-1. Configure Endpoint DLP settings
-1. Configure Microsoft Purview extension
+In this lab, you will perform the following:
+
+- Task 01: Onboard a device for endpoint DLP
+- Task 02: Create an endpoint DLP policy
+- Task 03: Configure Endpoint DLP settings
+- Task 04: Configure Microsoft Purview extension
 
 ## Task 1 – Onboard a device for endpoint DLP
 
@@ -49,8 +47,6 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
 1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and sign in as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
 
-1. In the **Make sure this is your organization** dialog, review the tenant URL and select **Join**.  
-
 1. Once your device has connected select **Done** on the **You're all set!** screen.
 
 1. Restart Client 2 VM (SC-401-CL2).
@@ -75,14 +71,14 @@ In this task, you'll create a DLP policy that blocks the transfer of sensitive i
 
 1. On the **Start with a template or create a custom policy** page, select **Custom** and **Custom policy**, then select **Next**.
 
-1. On the **Name your DLP policy** page, enter:
+1. On the **Name your DLP policy** page, provide the details then select **Next**:
 
     - **Name**: `Block USB transfers`
     - **Description**: `Prevent transferring sensitive data to USB devices.`
 
 1. On the **Assign admin units** page, select **Next**.
 
-1. On the **Choose locations to apply the policy** page, ensure only the **Devices** location is selected. If any other location is selected, ensure they're deselected, then select **Next**.
+1. On the **Choose where to apply the policy** page, ensure only the **Devices** location is selected. If any other location is selected, ensure they're deselected, then select **Next**.
 
 1. On the **Define policy settings** page, select **Create or customize advanced DLP rules** then select **Next**.
 
@@ -97,7 +93,7 @@ In this task, you'll create a DLP policy that blocks the transfer of sensitive i
 
 1. In the new **Content contains** section:
     - Select **Add** > **Sensitive info types**.
-    - On the **Sensitive info types** page, search for these sensitive info types:
+    - On the **Sensitive info types** page, search and select these sensitive info types then choose **Add** :
        - `Credit Card Number`
        - `U.S. Social Security Number (SSN)`
        - `U.S. Driver's License Number`
@@ -141,7 +137,7 @@ In this task, you'll fine-tune endpoint DLP settings by excluding a local folder
 
 1. On the **Endpoint DLP settings** page, expand **File path exclusions for Windows**  then select **+ Add file path exclusion**.
 
-1. On the **Exclude these file paths from Windows devices** flyout page in the **File path exclusion** field, enter `C:\FilePathExclusionTest` then select the **+** button to the right. Select **Save** to save this entry.
+1. On the **Exclude file paths from Windows devices** flyout page in the **File path exclusion** field, enter `C:\FilePathExclusionTest` then select the **+** button to the right. Select **Save** to save this entry.
 
 1. Back on the **Endpoint DLP settings** page, expand **Browser and domain restrictions to sensitive data** and select **+ Add or edit unallowed browsers**.
 
@@ -188,3 +184,37 @@ In this task, you'll install the Microsoft Purview Extension in Google Chrome to
 1. Close the Chrome browser window.
 
 You've successfully installed Chrome and added the Microsoft Purview Extension. The device now supports DLP policy enforcement in both Edge and Chrome.
+
+## Task 5 – Trigger a DLP policy in Outlook
+
+Next, you'll send sensitive employee information in an email to verify that your DLP policy correctly detects and blocks the activity.
+
+1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged into Microsoft 365 as Joni Sherman.
+
+1. In Microsoft Edge, select the app launcher in the top left and choose **Outlook**.
+
+1. Select the **New mail** button on the top left to compose a new email message.
+
+1. In the **To** field, enter `Megan` and select **Megan Bowen**'s email address.
+
+1. In the subject field enter `Help with employee information`.
+
+1. In the body of the email enter:
+
+   ``` text
+   Please help me with the start dates for the following employees:
+   ABC123456
+   DEF678901
+   GHI234567
+
+   Thank you, 
+   Joni Sherman
+   ```
+
+1. Select the **Send** button in the upper right of the message window to send the email.
+
+1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
+
+   ![Screenshot of Manage roles option.](../Media/dlp-email-blocked.png)
+
+You've confirmed that your DLP policy blocked the transmission of sensitive employee IDs through email.

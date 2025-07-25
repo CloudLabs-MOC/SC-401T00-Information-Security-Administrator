@@ -1,29 +1,20 @@
----
-lab:
-    title: 'Exercise 1 - Implement and manage DLP policies'
-    module: 'Module 2 - Implement Data Loss Prevention'
----
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
 # Lab 2 – Exercise 1 – Implement and manage DLP policies
+
+## Estimated Duration: 90 minutes
 
 Joni Sherman, the newly hired Information Security Administrator at Contoso Ltd., has been asked to configure data loss prevention (DLP) policies to help protect sensitive customer data across Microsoft 365. In this lab, you'll use Microsoft Purview and Microsoft Defender to create and manage DLP policies that detect and restrict the sharing of sensitive information such as credit card numbers and employee IDs.
 
-**Tasks**:
+## Lab Objectives
 
-1. Create a DLP policy in simulation mode
-1. Modify a DLP policy
-1. Create a DLP policy in PowerShell
-1. Activate a policy in simulation mode
-1. Modify policy priority
-1. Enable file inspection in Microsoft 365 Defender
-1. Create a file policy for Microsoft 365 Defender
+In this lab, you will perform the following:
+
+- Task 01: Create a DLP policy in simulation mode
+- Task 02: Modify a DLP policy
+- Task 03: Create a DLP policy in PowerShell
+- Task 04: Activate a policy in simulation mode
+- Task 05: Modify policy priority
+- Task 06: Enable file inspection in Microsoft 365 Defender
+- Task 07: Create a file policy for Microsoft 365 Defender
 
 ## Task 1 – Create a DLP policy in simulation mode
 
@@ -31,61 +22,82 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
 1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com**.
 
-1. Select **Solutions** > **Data Loss Prevention** > **Policies**.
+1. Select **Solutions (1)** > **Data Loss Prevention (2)**.
 
-1. On the **Policies** page, select **+ Create policy** to start the configuration for creating a new data loss prevention policy.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-2.png)
+
+1. Select **Policies (1)** from the left toolbar. On the **Policies** page, select **+ Create policy (2)** to start the configuration for creating a new data loss prevention policy.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-3.png)
 
 1. On the **Choose what type of data to protect** page, select **Data stored in connected sources** then select **Next**.
 
-1. On the **Start with a template or create a custom policy** page, select **Custom** as the category, then select **Custom policy** under **Regulations**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-4.png)
 
-1. Select **Next**.
+1. On the **Start with a template or create a custom policy** page, select **Custom** as the category, then select **Custom policy** under **Regulations**. Then select **Next**.
 
-1. On the **Name your DLP policy** page enter:
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-5.png)
+
+1. On the **Name your DLP policy** page provide the following details then select **Next**.:
 
    - **Name**: `DLP - Credit Card Protection`
    - **Description**: `Detect and restrict sharing of credit card numbers in Teams messages.`
 
-1. Select **Next**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-6.png)
 
-1. On the **Assign admin units** page select **Next**.
+1. On the **Assign admin units** page select **Next (1)**.
 
-1. On the **Choose locations to apply the policy** page, enable the location for **Teams chat and channel messages** only. If any other locations are selected, deselect them.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-7.png)
 
-1. Select **Next**.
+1. On the **Choose locations to apply the policy** page, enable the location for **Teams chat and channel messages (1)** only. If any other locations are selected, deselect them. Then select **Next (2)**.
 
-1. On the **Define policy settings** page, select **Create or customize advanced DLP rules**, then select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-8.png)
 
-1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
+1. On the **Define policy settings** page, select **Create or customize advanced DLP rules (1)**, then select **Next (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-9.png)
+
+1. On the **Customize advanced DLP rules** page, select **+ Create rule (1)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-10.png)
 
 1. In the **Create rule** flyout:
-    - In the **Name** field, enter `Credit card information`.
+    - In the **Name** field, enter **Credit card information (1)**.
+    - Under **Conditions**, select **+ Add condition (2)** > **Content is shared from Microsoft 365 (3)**.
 
-1. Under **Conditions**, select **+ Add condition** > **Content is shared from Microsoft 365**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-11.png)
 
 1. In the **Content is shared from Microsoft 365** section:
-    - Select the option for **with people outside my organization**.
+    - Select the option for **with people outside my organization (1)**.
+    - Select **+ Add condition (2)** > **Content contains (3)**.
 
-1. Select **+ Add condition** > **Content contains**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-12.png)
 
 1. In the new **Content contains** section:
-    - Select **Add** > **Sensitive info types**.
-    - On the **Sensitive info types** page, search for and select `Credit Card Number`, then select **Add**.
+    - Select **Add (1)** > **Sensitive info types (2)**.
+    - On the **Sensitive info types** page, search for and select **Credit Card Number (3)**, then select **Add (4)**.
 
-1. Under **Actions**, select **+ Add an action** > **Restrict access or encrypt the content in Microsoft 365 locations**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-14.png)
+
+1. Under **Actions**, select **+ Add an action (1)** > **Restrict access or encrypt the content in Microsoft 365 locations (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-15.png)
 
 1. In the **Restrict access or encrypt the content in Microsoft 365 locations** section:
-    - Select **Block only people outside your organization**.
+    - Select **Block only people outside your organization (1)**.
+    - Under **User notifications**:
+        - Turn on the toggle for **Use notifications to inform your users and help educate them on the proper use of sensitive info. (2)**.
+        - Select the checkbox for **Notify users in Office 365 service with a policy tip or email notifications (3)**.
 
-1. Under **User notifications**:
-    - Turn on the toggle for **Use notifications to inform your users and help educate them on the proper use of sensitive info.**.
-    - Select the checkbox for **Notify users in Office 365 service with a policy tip or email notifications**.
+            ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-16.png)
 
 1. Under **User overrides**:
-    - Select the checkbox for **Allow users to override policy restrictions in Fabric (including Power BI), Exchange, SharePoint, OneDrive, and Teams**.
-    - Select the checkbox for **Require a business justification to override**.
+    - Select the checkbox for **Allow users to override policy restrictions in Fabric (including Power BI), Exchange, SharePoint, OneDrive, and Teams (1)**.
+    - Select the checkbox for **Require a business justification to override (2)**.
+
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-17.png)
 
 1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown:
     - Select **Low**.
@@ -94,13 +106,19 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
 1. Back on the **Customize advanced DLP rules**, select **Next**.
 
-1. On the **Policy mode** page select **Run the policy in simulation mode** and select the checkbox for **Show policy tips while in simulation mode**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-18.png)
 
-1. Select **Next**.
+1. On the **Policy mode** page select **Run the policy in simulation mode (1)** and select the checkbox for **Show policy tips while in simulation mode (2)** then select **Next (3)**.
 
-1. On the **Review and finish** page review your settings then select **Submit**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-19.png)
 
-1. On the **New policy created** page select **Done**.
+1. On the **Review and finish** page review your settings then select **Submit (1)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-20.png)
+
+1. On the **New policy created** page select **Done (1)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-21.png)
 
 You've created a DLP policy that scans Teams content for credit card numbers and allows overrides with business justification.
 
@@ -112,21 +130,29 @@ In this task, you'll expand the scope of your existing DLP policy to include Exc
 
 1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
-1. On the **Policies** page select the checkbox for the recently created **DLP - Credit Card Protection**, then select **Edit policy** to open the policy configuration.
+1. On the **Policies (1)** page select the checkbox for the recently created **DLP - Credit Card Protection (2)**, then select **Edit policy (3)** to open the policy configuration.
 
-1. On the **Name your DLP policy** page, edit the description to `Detect and restrict sharing of credit card numbers in Teams and Exchange messages.`
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-22.png)
 
-1. Select **Next**.
+1. On the **Name your DLP policy** page, edit the description to `Detect and restrict sharing of credit card numbers in Teams and Exchange messages (1)` then select **Next (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-23.png)
 
 1. On the **Assign admin units** page select **Next**.
 
-1. On the **Choose locations to apply the policy** page, select the checkbox for **Exchange email** to add this location to your DLP policy.
+1. On the **Choose where to apply the policy** page, select the checkbox for **Exchange email** to add this location to your DLP policy then select **Next**.
 
 1. Select **Next** until you reach the **Review and finish** page.
 
-1. Select **Submit** on the **Review and finish** page to apply the change you made to the policy.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-34.png)
+
+1. On the **Review and finish** page to apply the change you made to the policy.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-35.png)
 
 1. Once the policy is updated select **Done** on the **Policy updated** page.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-24.png)
 
 You've successfully updated the policy to scan email along with Teams messages.
 
@@ -174,9 +200,9 @@ Now that your DLP policy has been tested in simulation, you'll activate it to be
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
-1. On the **Policies** page select the **DLP - Credit Card Protection** policy.
+1. On the **Policies** page select the **DLP - Credit Card Protection (1)** policy. At the bottom of the flyout on the right, select **View simulation (2)**.
 
-1. At the bottom of the flyout on the right, select **View simulation**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-25.png)
 
 1. On the simulation page, take a moment to explore:
 
@@ -186,9 +212,11 @@ Now that your DLP policy has been tested in simulation, you'll activate it to be
 
 1. After exploring the insights in simulation mode, select **Turn the policy on** then **Confirm** to activate the DLP policy.
 
-   A confirmation flyout will appear indicating that the policy has been published successfully.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-26.png)
 
-The policy is now active and enforcing restrictions on credit card information in Teams and Exchange.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-27.png)
+
+1. A confirmation flyout will appear indicating that the policy has been published successfully. The policy is now active and enforcing restrictions on credit card information in Teams and Exchange.
 
 ## Task 5 – Modify policy priority
 
@@ -226,7 +254,7 @@ Some file policies require access to inspect the contents of protected files. In
 
 File inspection is now enabled in Defender, allowing file policies to scan for sensitive content.
 
-## Task 7 – Create a file policy for Microsoft 365 Defender
+## Task 7 – Create a file policy for Microsoft 365 Defender [Read-Only]
 
 In this task, you'll create a file policy in Microsoft Defender that identifies and quarantines files containing credit card numbers in OneDrive and SharePoint.
 
