@@ -33,27 +33,38 @@ In this task, you'll assign Joni Sherman the Insider Risk Management role so she
 
 1. Sign into the Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
 
-1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as MOD Administrator, Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** and Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
 
-1. Select **Settings** > **Roles and Scopes** > **Role groups**.
+1. Select **Settings (1)** > **Roles and Scopes (2)** > **Role groups (3)**.
 
-1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-1.png)
 
-1. On the **Insider Risk Management** flyout panel on the right, select **Edit**.
+1. On the **Role groups for Microsoft Purview solutions** page select **Insider Risk Management (1)**. On the **Insider Risk Management** flyout panel on the right, select **Edit (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-2.png)
 
 1. On the **Edit members of the role group** page select **+ Choose users**.
 
-1. On the **Choose users** flyout panel, search for `Joni` then select the checkbox for **Joni Sherman**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-6.png)
 
-1. Select the **Select** button at the bottom of the panel.
+1. On the **Choose users** flyout panel, search for **Joni (1)** then select the checkbox for **Joni Sherman (2)**.
+Select the **Select (3)** button at the bottom of the panel.
+On the **Edit members of the role group** page select **Next (4)**.
 
-1. On the **Edit members of the role group** page select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-3.png)
 
 1. On the **Review the role group and finish** page select **Save**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-04.png)
+
 1. Once you have successfully added Joni to the role group, select **Done** on the **You successfully updated the role group** page.
 
-1. Sign out of the **Mod Administrator** account by selecting the MA icon on the top right of the window, then selecting **Sign out**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-05.png)
+
+
+1. Sign out of the **Administrator** account by selecting the **01 (1)** icon on the top right of the window, then selecting **Sign out (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-7.png)
 
 You've assigned Joni the necessary permissions to work with Insider Risk Management in the Microsoft Purview portal.
 
@@ -61,18 +72,24 @@ You've assigned Joni the necessary permissions to work with Insider Risk Managem
 
 Before you create an insider risk policy, you'll turn on the indicators needed for detection. These indicators define the types of risky activity the system will look for.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com**.
 
-1. Select **Settings** > **Insider risk management**.
+1. Select **Settings (1)** > **Insider risk management (2)**. Select the tab on the left for **Policy indicators (3)**.
 
-1. Select the tab on the left for **Policy indicators**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex2-task1-2.png)
 
 1. On the **Policy indicators** page, expand and select **Select all** to enable all indicators in these categories:
 
    - Office indicators
    - Cumulative exfiltration detection
 
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex2-task1-5.png)
+
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex2-task1-3.png)
+
 1. Select **Save** at the bottom of the page.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex2-task1-4.png)
 
 You've enabled key policy indicators so the system can detect sensitive actions like file exfiltration or risky Office activity.
 
@@ -80,22 +97,30 @@ You've enabled key policy indicators so the system can detect sensitive actions 
 
 In this task, you'll create a data leaks quick policy to automatically detect and respond to risky user behavior related to data exfiltration. Quick policies use built-in templates and default thresholds to simplify setup.
 
-1. In Microsoft Purview, select **Solutions** > **Insider Risk Management** > **Policies**.
+1. In Microsoft Purview, select **Solutions (1)** > **Insider Risk Management (2)** > 
 
-1. On the **Policies** page, select **Create policy**, then select **Quick policy**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-2.png)
+
+1. Select **Policies (1)** from the options. On the **Policies** page, select **+ Create policy (2)**, then select **Quick policy (3)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-1.png)
 
 1. On the **Create quick policies** flyout, select to **Get started** under **Data leaks**.
 
-1. Review the settings for creating a quick data leak policy, then select **Create policy**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-3.png)
+
+1. Review the settings for creating a quick data leak policy, update **Policy name** as **Data leaks quick (1) policy** then select **Create policy (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-4.png)
 
 1. On the **Your data leak policy is being created** page, select the checkboxes for:
 
-   - Email me when policies have unresolved warnings
-   - Email me when new high severity alerts are generated
+   - **Email me when policies have unresolved warnings (1)**
+   - **Email me when new high severity alerts are generated (2)**
+   - Then select **Update notification settings (3)**
+   - On the bottom of the **Your data leak policy is being created** page, select **Done (4)**.
 
-     Then select **Update notification settings**.
-
-1. On the bottom of the **Your data leak policy is being created** page, select **Done**.
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-5.png)
 
 You've created a quick policy for detecting potential data leaks using the default settings. Next, you'll customize it to resolve the configuration warning.
 
@@ -105,43 +130,73 @@ Some insider risk policies require additional indicators to function correctly. 
 
 On the **Policies** page for **Insider Risk Management**, you'll notice your data leaks policy has a recommendation.
 
-1. Select the **Data leaks quick policy** you just created.
+1. Select the **Data leaks quick policy (1)** you just created.
 
-1. Review the recommendation in the flyout page for the policy. You have a warning stating **Sequence trigger required indicators are not selected**. To resolve this warning, select **Edit policy**.
+1. Review the recommendation in the flyout page for the policy. You have a warning stating **Sequence trigger required indicators are not selected (2)**. To resolve this warning, select **Edit policy (3)**.
 
-1. On the **Choose a policy template** page, select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-1.png)
+
+1. On the **Choose a policy template** page, let the page load completely then select **Next**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-2.png)
 
 1. On the **Name your policy** page, select **Next**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-3.png)
+
 1. On the **Choose users, groups, & adaptive scopes** page, select **Next**.
 
-1. On the **Exclude users and groups (optional) (preview)** page, select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-4.png)
+
+1. On the **Exclude users and groups (optional)** page, select **Next**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-5.png)
 
 1. On the **Decide whether to prioritize content** page, select **Next**
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-6.png)
 
 1. On the **Choose triggering event for this policy** page, review the **Select which sequences will trigger this policy** and view the information stating **Some sequences require specific indicators to be turned on in 'Settings' before they can be selected below.**
 
 1. Select the option to **Turn on indicators** to enable the necessary sequence indicators for this policy.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-9.png)
+
 1. Data leaks is primarily a data exfiltration insider risk policy. In the dialogue to enable sequence indicators, select **Select all** to turn on all required **Exfiltrate indicators**, then select **Save**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-8.png)
 
 1. Select **Next** on the **Choose triggering event for this policy** page.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-11.png)
+
 1. On the **Choose thresholds for triggering events** page, select **Next**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-10.png)
 
 1. On the **Indicators** page, select **Next**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-12.png)
+
 1. On the **Detection options**, select **Next**.
 
-1. On the **Choose threshold type for indicators** page, select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-13.png)
 
-   This policy uses a built-in triggering event and indicators. It starts evaluating user activity only when Microsoft Defender for Endpoint detects threats like defense evasion or unwanted software.
+1. On the **Choose threshold type for indicators** page, select **Next**. This policy uses a built-in triggering event and indicators. It starts evaluating user activity only when Microsoft Defender for Endpoint detects threats like defense evasion or unwanted software.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-14.png)
 
 1. On the **Review settings and finish** page, select **Submit**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-15.png)
+
 1. Select **Done** on the **Your policy was created** page.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-16.png)
+
 1. Back on the **Policies** page, your policy should now have a **Healthy** status.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-17.png)
 
 Your insider risk policy is now healthy and ready to detect risky activities based on sequence triggers and enabled indicators.
 
@@ -151,13 +206,15 @@ In this task, you'll enable integration between Microsoft Defender for Endpoint 
 
 1. In Microsoft Edge, navigate to Microsoft Defender by going to `https://security.microsoft.com`.
 
-1. In the left navigation pane, select **Settings** > **Endpoints** > **Advanced features**.
+1. In the left navigation pane, select **System (1)** > **Settings (2)** > **Endpoints (3)**.
 
-1. Scroll down and select the toggle to **On** to **Share endpoint alerts with Microsoft Compliance Center**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task5-1.png)
 
-   ![Screenshot showing the Share endpoints with Microsoft Compliance Center toggle.](../Media/enable-irm-in-mde.png)
+1. Under **Advanced features (1)**, scroll down and select the toggle to **On (2)** to **Share endpoint alerts with Microsoft Compliance Center**.
 
-1. Select **Save preferences** at the bottom of the screen.
+1. Select **Save preferences (3)** at the bottom of the screen.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task5-2.png)
 
 You've successfully enabled Defender for Endpoint to share alerts with Microsoft Purview.
 
@@ -165,7 +222,7 @@ You've successfully enabled Defender for Endpoint to share alerts with Microsoft
 
 In this task, you'll configure the policy indicators and create a priority user group that can be used in insider risk policies.
 
-> [!note] Microsoft Defender for Endpoint indicators might appear greyed out and unselectable if the integration from the previous task hasn't finished processing. If that happens, wait a few minutes and refresh the page before continuing.
+  >**Note:**  Microsoft Defender for Endpoint indicators might appear greyed out and unselectable if the integration from the previous task hasn't finished processing. If that happens, wait a few minutes and refresh the page before continuing.
 
 1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com`.
 
@@ -175,7 +232,7 @@ In this task, you'll configure the policy indicators and create a priority user 
 
 1. On the **Policy indicators** page, expand and select **Select all** to enable all indicators in these categories:
 
-   - Microsoft Defender for Endpoint indicators (preview)
+   - Microsoft Defender for Endpoint indicators
    - Risky browsing indicators (preview)
 
 1. Select **Save** at the bottom of the page.
