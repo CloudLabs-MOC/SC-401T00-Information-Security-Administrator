@@ -140,11 +140,11 @@ In this task, you'll expand the scope of your existing DLP policy to include Exc
 
 1. On the **Assign admin units** page select **Next**.
 
-1. On the **Choose where to apply the policy** page, select the checkbox for **Exchange email** to add this location to your DLP policy then select **Next**.
-
-1. Select **Next** until you reach the **Review and finish** page.
+1. On the **Choose where to apply the policy** page, select the checkbox for **Exchange email (1)** to add this location to your DLP policy then select **Next (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-34.png)
+
+1. Select **Next** until you reach the **Review and finish** page.
 
 1. On the **Review and finish** page to apply the change you made to the policy.
 
@@ -162,7 +162,9 @@ In this task, you'll create a DLP policy using PowerShell to block sharing of em
 
 1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
 
-1. Open an elevated PowerShell window by right clicking the **Start** button in the task bar, then select **Terminal (Admin)**.
+1. To open an elevated PowerShell, search for **Windows PowerShell** in the taskbar, right-click on **Windows PowerShell (1)** option, and select **Run as administrator (1)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-028.png)
 
 1. Run the **Connect-IPPSSession** cmdlet to connect to the Security & Compliance PowerShell:
 
@@ -170,7 +172,11 @@ In this task, you'll create a DLP policy using PowerShell to block sharing of em
     Connect-IPPSSession
     ```
 
-1. Sign in as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) in the **Sign in to your account** pop-up window. Joni's password was set in a previous exercise.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-29.png)
+
+1. Sign in as **Joni Sherman** using **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com** in the **Sign in to your account** pop-up window.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-30.png)
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 
@@ -184,11 +190,15 @@ In this task, you'll create a DLP policy using PowerShell to block sharing of em
     New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}
     ```
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-31.png)
+
 1. Run the **Get-DLPComplianceRule** cmdlet to review the **EmployeeID DLP rule**:
 
     ```powershell
     Get-DLPComplianceRule -Identity "EmployeeID DLP rule"
     ```
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-33.png)
 
 You've successfully used PowerShell to create a DLP policy that blocks the sharing of employee IDs.
 
@@ -226,9 +236,9 @@ When multiple policies exist, their priority determines which one applies first.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
-1. On the **Policies** page, select the **EmployeeID DLP Policy**.
+1. On the **Policies** page, select the **EmployeeID DLP Policy**. Select **Reprioritize** from the top navigation ribbon, then select **Move to top (highest priority)**.
 
-1. Select **Reprioritize** from the top navigation ribbon, then select **Move to top (highest priority)**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-26.png)
 
 1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
 
@@ -242,13 +252,21 @@ Some file policies require access to inspect the contents of protected files. In
 
 1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and signed in as Joni Sherman.
 
-1. In **Microsoft Edge**, navigate to Microsoft Defender by going to `https://security.microsoft.com`. Log in as **MOD Administrator**, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. In **Microsoft Edge**, navigate to Microsoft Defender by going to `https://security.microsoft.com`. Log in as **MOD Administrator**, using Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** and Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
 
-1. On the left sidebar, select **System** > **Settings**, then select **Cloud Apps**.
+1. On the left sidebar, select **System (1)** > **Settings (2)**, then select **Cloud Apps (3)**.
 
-1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section. Under **Microsoft Information Protection**, select **Grant permission** to enable file inspection.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-4.png)
 
-1. Follow the prompt to allow the required permissions in Microsoft Entra ID, then you should see file inspection is **Active** in Microsoft Defender for Cloud Apps.
+1. In the left pane within the **Cloud apps** window, scroll down to the **Information Protection** section. Under **Microsoft Information Protection (1)**, select **Grant permission (2)** to enable file inspection.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-2.png)
+
+1. Follow the prompt to allow the required permissions in Microsoft Entra ID by chossing **Accept**, then you should see file inspection is **Active** in Microsoft Defender for Cloud Apps.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-3.png)
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-5.png)
 
 1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, select **Sign out**, then close your browser window.
 
