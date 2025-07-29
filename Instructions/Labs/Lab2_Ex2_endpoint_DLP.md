@@ -17,9 +17,9 @@ In this lab, you will perform the following:
 
 In this task, you'll onboard a Windows 11 device so it's ready to be protected by endpoint DLP policies.
 
-1. Log into **Client 2 VM (SC-401-CL2)** as the **SC-401-cl2\admin** account.
+1. Log into **Client VM (clientvm-<inject key="DeploymentID" enableCopy="false" /></inject>)** as the **azureuser** account.
 
-1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as  **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com**. Joni's password was set in a previous exercise.
+1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as **JoniS@<inject key="TenantDomainName"></inject>**
 
 1. Select **Settings (1)** from the left sidebar. On the left sidebar, expand **Device onboarding (2)**, then select **Onboarding (3)**.
 
@@ -57,7 +57,7 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-12.png)
 
-1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and sign in as **Joni Sherman** using **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.** Joni's password was set in a previous exercise. Click **Next**.
+1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and sign in as **Joni Sherman** using **JoniS@<inject key="TenantDomainName"></inject>**. Click **Next**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-13.png)
 
@@ -67,9 +67,9 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-16.png)
 
-1. Restart Client 2 VM (SC-401-CL2).
+1. Restart **Client VM (clientvm-<inject key="DeploymentID" enableCopy="false" /></inject>)** and close the session.
 
-1. Log back into Client 1 VM (SC-401-CL1).
+1. You will be back into **LabVM**, signed in as demouser.
 
 1. The Microsoft Purview window should still be open at the **Devices** page. Refresh this page and verify the device has been successfully onboarded.
 
@@ -79,7 +79,7 @@ You've successfully onboarded the device and joined it to Microsoft Entra ID. It
 
 In this task, you'll create a DLP policy that blocks the transfer of sensitive information to USB drives. This helps reduce the risk of data being taken offsite without authorization.
 
-1. Sign in to Client 1 VM (SC-401-CL1) as the SC-401-cl1\admin account.
+1. You should still be logged into **LabVM**, signed in as demouser account.
 
 1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as Joni Sherman.
 
@@ -169,7 +169,7 @@ You've successfully created a DLP policy in simulation mode that blocks USB tran
 
 In this task, you'll fine-tune endpoint DLP settings by excluding a local folder, setting browser restrictions, and blocking a cloud domain.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into **LabVM**, signed in as demouser account and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In Microsoft Purview, from the left navigation pane, select **Settings (1)** > **Data Loss Prevention (2)**.
 
@@ -263,7 +263,7 @@ You've successfully installed Chrome and added the Microsoft Purview Extension. 
 
 Next, you'll send sensitive employee information in an email to verify that your DLP policy correctly detects and blocks the activity.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged into Microsoft 365 as Joni Sherman.
+1. You should still be logged into **LabVM**, signed in as demouser account and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In Microsoft Edge, select the app launcher in the top left and choose **Outlook**.
 
@@ -298,3 +298,12 @@ Next, you'll send sensitive employee information in an email to verify that your
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-51.png)
 
 You've confirmed that your DLP policy blocked the transmission of sensitive employee IDs through email.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Onboarded a device for endpoint DLP
+- Created an endpoint DLP policy
+- Configured Endpoint DLP settings
+- Configured Microsoft Purview extension

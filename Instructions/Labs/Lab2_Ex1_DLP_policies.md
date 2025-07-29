@@ -20,9 +20,9 @@ In this lab, you will perform the following:
 
 In this task, you'll create a DLP policy in simulation mode that targets credit card numbers in Teams messages. The policy will notify users when they attempt to share sensitive content and allow them to override with justification.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. You’ll now be working within the **LabVM**, signed in as demouser.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as **JoniS@<inject key="TenantDomainName"></inject>**.
 
 1. Select **Solutions (1)** > **Data Loss Prevention (2)**.
 
@@ -126,7 +126,7 @@ You've created a DLP policy that scans Teams content for credit card numbers and
 
 In this task, you'll expand the scope of your existing DLP policy to include Exchange email. This helps ensure consistent protection across additional communication channels.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into **LabVM**, signed in as demouser, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
@@ -160,7 +160,7 @@ You've successfully updated the policy to scan email along with Teams messages.
 
 In this task, you'll create a DLP policy using PowerShell to block sharing of employee IDs via email. This approach demonstrates how to define and enforce policy settings through scripting.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. You should still be logged into **LabVM**, signed in as demouser account.
 
 1. To open an elevated PowerShell, search for **Windows PowerShell** in the taskbar, right-click on **Windows PowerShell (1)** option, and select **Run as administrator (1)**.
 
@@ -174,7 +174,7 @@ In this task, you'll create a DLP policy using PowerShell to block sharing of em
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-29.png)
 
-1. Sign in as **Joni Sherman** using **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com** in the **Sign in to your account** pop-up window.
+1. Sign in as **Joni Sherman** using **JoniS@<inject key="TenantDomainName"></inject>** in the **Sign in to your account** pop-up window.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-30.png)
 
@@ -206,7 +206,7 @@ You've successfully used PowerShell to create a DLP policy that blocks the shari
 
 Now that your DLP policy has been tested in simulation, you'll activate it to begin enforcing its actions.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into **LabVM**, signed in as demouser account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
@@ -232,7 +232,7 @@ Now that your DLP policy has been tested in simulation, you'll activate it to be
 
 When multiple policies exist, their priority determines which one applies first. In this task, you'll move the employee ID policy to the highest priority.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. You should still be logged into **LabVM**, signed in as demouser account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
@@ -250,7 +250,7 @@ You've updated policy priority so that the employee ID policy takes precedence o
 
 Some file policies require access to inspect the contents of protected files. In this task, you'll grant the necessary permissions to allow Microsoft Defender to scan the contents of OneDrive and SharePoint files for sensitive information.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and signed in as Joni Sherman.
+1. You should still be logged into **LabVM**, signed in as demouser account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In **Microsoft Edge**, navigate to Microsoft Defender by going to `https://security.microsoft.com`. Log in as **MOD Administrator**, using Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** and Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
 
@@ -268,7 +268,7 @@ Some file policies require access to inspect the contents of protected files. In
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-5.png)
 
-1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, select **Sign out**, then close your browser window.
+1. Sign out of the MOD Administrator account by selecting the **01** icon in the top right, select **Sign out**, then close your browser window.
 
 File inspection is now enabled in Defender, allowing file policies to scan for sensitive content.
 
@@ -276,9 +276,9 @@ File inspection is now enabled in Defender, allowing file policies to scan for s
 
 In this task, you'll create a file policy in Microsoft Defender that identifies and quarantines files containing credit card numbers in OneDrive and SharePoint.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. You should still be logged into **LabVM**, signed in as demouser account.
 
-1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft Defender portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft Defender portal as **Joni Sherman** using id **JoniS@<inject key="TenantDomainName"></inject>**
 
 1. In the **Microsoft Defender** portal, in the left navigation, select  **Cloud apps** > **Policies** then select **Policy management**.
 
@@ -309,3 +309,15 @@ In this task, you'll create a file policy in Microsoft Defender that identifies 
 1. Select **Create** at the bottom of the page to create the file policy.
 
 You've successfully created a file policy that detects and quarantines files with sensitive credit card data.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Created a DLP policy in simulation mode
+- Modified a DLP policy
+- Created a DLP policy in PowerShell
+- Activated a policy in simulation mode
+- Modified policy priority
+- Enabled file inspection in Microsoft 365 Defender
+- Created a file policy for Microsoft 365 Defender

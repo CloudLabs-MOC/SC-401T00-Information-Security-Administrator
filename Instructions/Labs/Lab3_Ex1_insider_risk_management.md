@@ -1,37 +1,27 @@
----
-lab:
-    title: 'Exercise 1 - Implement Insider Risk Management'
-    module: 'Module 3 - Implement Insider Risk Management'
----
-
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
 # Lab 3 - Exercise 1 - Implement Insider Risk Management
+
+## Estimated Duration: 90 minutes
 
 You are Joni Sherman, the Information Security Administrator for Contoso Ltd. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Contoso Ltd. has noticed unusual browsing activities that could potentially expose sensitive data. To proactively address this insider risk, you will implement Microsoft Purview Insider Risk Management, focusing on identifying, analyzing, and responding to potential insider threats effectively.
 
-**Tasks**:
+## Lab Objectives
 
-1. Assign insider risk management permissions
-1. Configure insider risk indicators
-1. Create an insider risk policy
-1. Customize the data leaks policy
-1. Enable Microsoft Defender for Endpoint integration with Insider Risk Management
-1. Enable indicators and configure priority users
-1. Create a policy for security policy violations by priority users
-1. Create a notice template
+In this lab, you will perform the following:
+
+- Task 01: Assign insider risk management permissions
+- Task 02: Configure insider risk indicators
+- Task 03: Create an insider risk policy
+- Task 04: Customize the data leaks policy
+- Task 05: Enable Microsoft Defender for Endpoint integration with Insider Risk Management
+- Task 06: Enable indicators and configure priority users
+- Task 07: Create a policy for security policy violations by priority users
+- Task 08: Create a notice template
 
 ## Task 1 – Assign insider risk management permissions
 
 In this task, you'll assign Joni Sherman the Insider Risk Management role so she can access and manage insider risk features in Microsoft Purview.
 
-1. Sign into the Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. You’ll now be working within the **LabVM**, signed in as demouser.
 
 1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as MOD Administrator, Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** and Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
 
@@ -72,7 +62,7 @@ You've assigned Joni the necessary permissions to work with Insider Risk Managem
 
 Before you create an insider risk policy, you'll turn on the indicators needed for detection. These indicators define the types of risky activity the system will look for.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="DeploymentID" enableCopy="false" /></inject>.onmicrosoft.com**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="TenantDomainName"></inject>**.
 
 1. Select **Settings (1)** > **Insider risk management (2)**. Select the tab on the left for **Policy indicators (3)**.
 
@@ -226,45 +216,48 @@ In this task, you'll configure the policy indicators and create a priority user 
 
 1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com`.
 
-1. Select **Settings** > **Insider risk management**.
+1. Select **Settings (1)** > **Insider risk management (2)**. Select the tab on the left for **Policy indicators (3)**.
 
-1. Select the tab on the left for **Policy indicators**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-1.png)
 
 1. On the **Policy indicators** page, expand and select **Select all** to enable all indicators in these categories:
 
    - Microsoft Defender for Endpoint indicators
    - Risky browsing indicators (preview)
 
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-2.png)
+
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-3.png)
+
 1. Select **Save** at the bottom of the page.
 
-1. Select the **Priority user groups** tab, then select **+ Create priority user group**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-4.png)
+
+1. Select the **Priority user groups (1)** tab, then select **+ Create priority user group (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-5.png)
 
 1. On the **Name and describe the priority user group** page, enter:
 
-   - **Name**: `Finance team`
-   - **Description**: `Team members who manage financial operations, budgeting, and payroll systems.`
+   - **Name**: `Finance team (1)`
+   - **Description**: `Team members who manage financial operations, budgeting, and payroll systems. (2)`
+   - Select **Next (3)**.
 
-1. Select **Next**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-6.png)
 
-1. On the **Members** page, select **+ Members**.
+1. On the **Members** page, select **+ Members (1)**. In the **Members** flyout, search for and select. Then choose **Add (5)** to add the three members to the Finance team priority group. Then select **Next (6)**.
 
-1. In the **Members** flyout, search for and select:
+   - `Lynne Robbins (2)`
+   - `Debra Berger (3)`
+   - `Megan Bowen (4)`
 
-   - `Lynne Robbins`
-   - `Debra Berger`
-   - `Megan Bowen`
+     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-7.png)
 
-1. Select **Add** to add the three members to the Finance team priority group.
+1. On the **Choose who can view data involving users in this priority group**, select **+ Choose users and role groups (1)**. In the flyout, select the checkbox for **Insider Risk Management (2)**, then select **Add (3)**. Then choose **Next (4)**.
 
-1. Select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-8.png)
 
-1. On the **Choose who can view data involving users in this priority group**, select **+ Choose users and role groups**.
-
-1. In the flyout, select the checkbox for **Insider Risk Management**, then select **Add**.
-
-1. Select **Next**.
-
-1. **Review** and **Submit** your settings, then select **Done** once your priority user group has been created.
+1. From the **Review** page, choose **Submit** , then select **Done** once your priority user group has been created.
 
 You've configured policy indicators and created a priority group for monitoring high-risk users.
 
@@ -274,34 +267,52 @@ In this task, you'll create an insider risk policy that detects Defender for End
 
 1. In Microsoft Purview, select **Solutions** > **Insider Risk Management** > **Policies**.
 
-1. On the **Policies** page, select **Create policy**, then select **Custom policy**.
+1. On the **Policies** page, select **+ Create policy (1)**, then select **Custom policy (2)**.
 
-1. On the **Choose a policy template** page, select **Security policy violations by priority users (preview)**, then select Next.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-1.png)
+
+1. On the **Choose a policy template** page, select **Security policy violations by priority users (1)**, then select **Next (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-2.png)
+
 
 1. On the **Name your policy** page, enter:
 
-   - **Name**: `Security policy violations - Priority users`
-   - **Description**: `Detects Defender for Endpoint alerts for risky activity by priority users, such as malware or disabled protections.`
+   - **Name**: `Security policy violations - Priority users (1)`
+   - **Description**: `Detects Defender for Endpoint alerts for risky activity by priority users, such as malware or disabled protections. (2)`
+   - Select **Next (3)**.
 
-1. Select **Next**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-3.png)
 
-1. On the **Choose users, groups, & adaptive scopes** page, select **Add or edit priority user groups**.
+1. On the **Choose users, groups, & adaptive scopes** page, select **+ Add or edit priority user groups (1)**.
 
-1. On the **Choose priority user groups** flyout, select the checkbox for the **Finance team** group, then select Add.
+1. On the **Choose priority user groups** flyout, select the checkbox for the **Finance team (2)** group, then select **Add (3)**. Select **Next (4)**.
 
-1. Select **Next**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-4.png)
 
 1. On the **Decide whether to prioritize content** page, select **Next**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-5.png)
+
 1. On the **Choose triggering event for this policy** page, select **Next**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-6.png)
 
 1. On the **Indicators** page, select **Next**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-7.png)
+
 1. On the **Choose threshold type for indicators** page, leave the default **Apply thresholds provided by Microsoft** option selected, then select **Next**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-8.png)
 
 1. On the **Review settings and finish** page, select **Submit**.
 
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-9.png)
+
 1. On the **Your policy was created** page, select **Done**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-10.png)
 
 You've created a custom insider risk policy that uses Defender for Endpoint signals to detect risky activity from priority users.
 
@@ -309,16 +320,20 @@ You've created a custom insider risk policy that uses Defender for Endpoint sign
 
 In this task, you'll create a notice template in Microsoft Purview to notify users when an insider risk alert is triggered.
 
-1. In Microsoft Purview, select **Solutions** > **Insider Risk Management** > **Notice templates**.
+1. In Microsoft Purview, select **Solutions (1)** > **Insider Risk Management (2)**.
 
-1. On the **Notice templates** page, select **+ Create notice template**.
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task8-1.png)
 
-1. Fill out the necessary information in **Create a new notice template** flyout panel on the right.
+1. Click on **Notice templates (1)** from the options available in the **Insider Risk Management** toolbar. On the **Notice templates** page, select **+ Create notice template (2)**.
 
-    - **Template name**: `Security Violation Alert`
-    - **Send from**: `Joni Sherman`
-    - **Subject**: `Unusual activity detected - please review`
-    - **Message body**:
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task8-2.png)
+
+1. Fill out the necessary information in **Create a new notice template** flyout panel on the right then Select **Create (5)**.
+
+    - **Template name**: `Security Violation Alert (1)`
+    - **Send from**: Search and select `Joni Sherman (2)`
+    - **Subject**: `Unusual activity detected - please review (3)`
+    - **Message body (4)**:
 
         ````html
         <!DOCTYPE html>
@@ -334,8 +349,23 @@ In this task, you'll create a notice template in Microsoft Purview to notify use
         </html>
         ````
 
-1. Select **Create**.
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task8-3.png)
 
-1. Back on the **Notice templates** page you'll see the **Security Violation Alert** template you just created.
+1. Wait for sometime for template to get created. Back on the **Notice templates** page you'll see the **Security Violation Alert** template you just created.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task8-4.png)
 
 You've created a notice template that Insider Risk Management can use to notify users of security policy violations.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Assigned insider risk management permissions
+- Configured insider risk indicators
+- Created an insider risk policy
+- Customized the data leaks policy
+- Enabled Microsoft Defender for Endpoint integration with Insider Risk Management
+- Enabled indicators and configure priority users
+- Created a policy for security policy violations by priority users
+- Created a notice template
