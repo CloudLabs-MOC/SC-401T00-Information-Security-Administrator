@@ -23,7 +23,10 @@ In this task, you'll assign Joni Sherman the Insider Risk Management role so she
 
 1. You’ll now be working within the **LabVM**, signed in as demouser.
 
-1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as MOD Administrator, Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** and Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
+1. In Microsoft Edge, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as Administrator, 
+
+    - Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** 
+    - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
 
 1. Select **Settings (1)** > **Roles and Scopes (2)** > **Role groups (3)**.
 

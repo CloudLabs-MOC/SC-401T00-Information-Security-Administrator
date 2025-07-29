@@ -19,7 +19,10 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
 1. Log into **Client VM (clientvm-<inject key="DeploymentID" enableCopy="false" /></inject>)** as the **azureuser** account.
 
-1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as **JoniS@<inject key="TenantDomainName"></inject>**
+1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Select **Settings (1)** from the left sidebar. On the left sidebar, expand **Device onboarding (2)**, then select **Onboarding (3)**.
 
@@ -57,9 +60,12 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-12.png)
 
-1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and sign in as **Joni Sherman** using **JoniS@<inject key="TenantDomainName"></inject>**. Click **Next**.
+1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and Sign in as Joni Sherman using below credentials:
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-13.png)
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
+
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-13.png)
 
 1. You will see a screen indicating that the device is being registered with the company policy. Wait a few moments for the process to complete. Once your device has connected select **Done** on the **You're all set!** screen.
 
@@ -273,7 +279,9 @@ Next, you'll send sensitive employee information in an email to verify that your
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-49.png)
 
-1. In the **To** field, enter `Megan` and select **Megan Bowen**'s email address.
+1. In the **To** field, enter the below email address.
+
+    - Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>**
 
 1. In the subject field enter `Help with employee information`.
 

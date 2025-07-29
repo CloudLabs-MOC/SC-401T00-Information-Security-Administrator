@@ -22,7 +22,10 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
 1. You’ll now be working within the **LabVM**, signed in as demouser.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as **JoniS@<inject key="TenantDomainName"></inject>**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Select **Solutions (1)** > **Data Loss Prevention (2)**.
 
@@ -174,9 +177,13 @@ In this task, you'll create a DLP policy using PowerShell to block sharing of em
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-29.png)
 
-1. Sign in as **Joni Sherman** using **JoniS@<inject key="TenantDomainName"></inject>** in the **Sign in to your account** pop-up window.
+1. Sign in as **Joni Sherman**.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-30.png)
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
+
+1. Then, in the **Automatically sign in to all desktop apps and websites on this device?** tab choose **No, this app only.**
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-30.png)
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 
@@ -252,7 +259,10 @@ Some file policies require access to inspect the contents of protected files. In
 
 1. You should still be logged into **LabVM**, signed in as demouser account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In **Microsoft Edge**, navigate to Microsoft Defender by going to `https://security.microsoft.com`. Log in as **MOD Administrator**, using Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>** and Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**.
+1. In **Microsoft Edge**, navigate to Microsoft Defender by going to `https://security.microsoft.com`. Log in as  Administrator, using below credentials:
+
+    - Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>**
+    - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**
 
 1. On the left sidebar, select **System (1)** > **Settings (2)**, then select **Cloud Apps (3)**.
 
@@ -278,7 +288,10 @@ In this task, you'll create a file policy in Microsoft Defender that identifies 
 
 1. You should still be logged into **LabVM**, signed in as demouser account.
 
-1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft Defender portal as **Joni Sherman** using id **JoniS@<inject key="TenantDomainName"></inject>**
+1. Open **Microsoft Edge** and navigate to **`https://security.microsoft.com`** and log into the Microsoft Defender portal as **Joni Sherman**.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. In the **Microsoft Defender** portal, in the left navigation, select  **Cloud apps** > **Policies** then select **Policy management**.
 
