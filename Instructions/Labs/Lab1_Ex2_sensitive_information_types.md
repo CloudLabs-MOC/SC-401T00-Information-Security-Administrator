@@ -1,10 +1,3 @@
----
-lab:
-    title: 'Exercise 2 - Create and manage sensitive information types'
-    module: 'Module 1 - Implement Information Protection'
----
-
-
 # Lab 1 - Exercise 2 - Create and manage sensitive information types
 
 Joni Sherman, the Information Security Administrator at Contoso Ltd., is updating the organization's information protection strategy after previous incidents involving the unintentional sharing of personal data in support tickets. She needs to create and test custom sensitive information types that help detect employee IDs and references to personal health information in documents and emails.
@@ -23,9 +16,10 @@ Joni Sherman, the Information Security Administrator at Contoso Ltd., is updatin
 
 In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal with the below credentials.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. On the left sidebar, select **Solutions** then select **Information Protection**.
 
@@ -84,8 +78,6 @@ You have successfully created a new sensitive information type to identify emplo
 
 You've received reports that some documents containing employee IDs aren't being detected. To improve detection coverage, you'll lower the confidence level of the pattern in the Contoso Employee IDs SIT so it triggers even when only partial evidence is found, increasing the likelihood of detection.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and logged into Microsoft Purview as Joni Sherman.
-
 1. In Microsoft Edge, navigate to `https://purview.microsoft.com`.
 
 1. In the left navigation, select **Solutions** > **Information protection** > **Classifiers** > **Sensitive info types**.
@@ -116,11 +108,12 @@ You have successfully reduced the confidence level to increase the sensitivity o
 
 In this task, you'll create the role group to create an EDM classifier and add Joni to the new role group.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
-
 1. Open **Microsoft Edge** then navigate to **`https://admin.microsoft.com`**.
 
-1. When the **Pick an account** page is displayed, select **Use another account** and sign in as **MOD Administrator** `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. When the **Pick an account** page is displayed, select **Use another account** and sign in with below credentials.
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
 
@@ -161,7 +154,11 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
 
 1. Open **Microsoft Edge** then navigate to the Microsoft Purview portal at `https://purview.microsoft.com`.
 
-1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in.
+1. When the **Pick an account** page is displayed, select **Joni Sherman** and sign in with below credentails.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Navigate to **Information Protection** by selecting **Solutions** > **Information Protection** from the left sidebar.
 
@@ -239,8 +236,6 @@ You have successfully created a new EDM-based classification sensitive informati
 
 In this task, you'll hash and upload the actual data for the EDM-based classification sensitive information type via the EDM Upload Agent tool.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
-
 1. In **Microsoft Edge**, navigate to **`https://go.microsoft.com/fwlink/?linkid=2088639`** to download the EDM upload agent.
 
 1. Once the download is complete, select **Open file** in the Microsoft Edge browser window to open the **Microsoft Exact Data Match Upload Agent Setup** wizard.
@@ -289,7 +284,10 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
     .\EdmUploadAgent.exe /Authorize
     ```
 
-1. When the **Pick an account** window is displayed, sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. When the **Pick an account** window is displayed, sign in with below credentials.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Back in the terminal window, download the database schema definition of the EDM-based classification sensitive information type by running this script in PowerShell. For the **DataStoreName**, this is where you'll use the schema name saved from the previous task.
 
@@ -332,8 +330,6 @@ You have successfully hashed and uploaded a database file for an EDM-based class
 ## Task 6 – Create keyword dictionary
 
 Several violations of personal information leakage happened when users sent out emails after colleagues reported on sick leave. In those cases, the reason for illness or disease was disclosed. We don't want that to happen. In this task, you'll create a keyword dictionary to prevent personal information leakage in emails.
-
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. The Microsoft Purview portal should still be to the EDM classifiers page in Microsoft Edge. If not, in Microsoft Edge, navigate to `https://purview.microsoft.com` > **Solutions** > **Information protection**.
 
@@ -397,8 +393,6 @@ You have successfully created a new sensitive information type based on a keywor
 ## Task 7 – Test custom sensitive information types
 
 Always test custom sensitive information types before using them in policies. Otherwise, data loss or leakage may occur if the pattern is misconfigured.
-
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
 1. In your task bar, search for `Notepad` in the search field. Select the **Notepad** app from the **Best match** section of the search.
 

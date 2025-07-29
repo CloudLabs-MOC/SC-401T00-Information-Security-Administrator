@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 4 - Deploy Microsoft Purview Message Encryption'
-    module: 'Module 1 - Implement Information Protection'
----
-
 # Lab 1 - Exercise 4 - Deploy Microsoft Purview Message Encryption
 
 Joni Sherman, the Information Security Administrator for Contoso Ltd., has been tasked with ensuring secure communication between departments. To support this, she is configuring Microsoft Purview Message Encryption for Contoso, including modifying the default settings and creating a custom branding experience for the finance department.
@@ -20,9 +14,7 @@ Joni Sherman, the Information Security Administrator for Contoso Ltd., has been 
 
 In this task, you'll verify the correct Azure RMS functionality of your tenant.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
-
-1. Open PowerShell by right-clicking the Start button in the taskbar and selecting **Terminal (Admin)**.
+1. In the LabVM, Open PowerShell by right-clicking the Start button in the taskbar and selecting **Terminal (Admin)**.
 
 1. Run the **Install Module** cmdlet in the terminal window to install the latest **Exchange Online PowerShell** module version:
 
@@ -38,7 +30,10 @@ In this task, you'll verify the correct Azure RMS functionality of your tenant.
     Connect-ExchangeOnline
     ```
 
-1. When the **Sign in** window is displayed, sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). You will use the password you reset Joni's to in a previous lab.
+1. When the **Sign in** window is displayed, sign in using below credentials.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Run the **Get-IRMConfiguration** cmdlet to verify Azure RMS and IRM is activated in your tenant:
 
@@ -104,11 +99,13 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 > [!alert] External email delivery might be blocked in some lab environments. This task might not complete as expected.
 
-1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin**.
-
 1. Open **Microsoft Edge** in an InPrivate window by right clicking Microsoft Edge from the task bar and selecting **New InPrivate window**.
 
-1. Navigate to **`https://outlook.office.com`** and log into Outlook on the web as `LynneR@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Lynne's password was set in a previous exercise.
+1. Navigate to **`https://outlook.office.com`** and log into Outlook on the web as `ODL User` using below credentials.
+
+  - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+  - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 1. On the **Stay signed in?** dialog box, select the checkbox for **Don't show this again** then select **No**.
 
@@ -122,9 +119,9 @@ You must confirm that no social IDs dialog is displayed for external recipients 
 
 1. Select **Send** to send the message. Leave the Outlook window open.
 
-1. Sign into your personal email account in a new window and open the message from Lynne Robbins. If you sent this email to a Microsoft account (like @outlook.com) the encryption might be processed automatically, and you'll see the message automatically. If you sent the email to another email service like (@gmail.com), you might have to perform the next steps to process the encryption and read the message.
+1. Sign into your personal email account in a new window and open the message from ODL User. If you sent this email to a Microsoft account (like @outlook.com) the encryption might be processed automatically, and you'll see the message automatically. If you sent the email to another email service like (@gmail.com), you might have to perform the next steps to process the encryption and read the message.
 
-    > [!Note] **Note**: You might need to check your junk or spam folder for the message from Lynne Robbins.
+    > [!Note] **Note**: You might need to check your junk or spam folder for the message from ODL User.
 
 1. Select **Read the message**.
 
@@ -144,7 +141,7 @@ You have successfully tested the modified default OME template with deactivated 
 
 Protected messages sent by your organizations finance department require special branding, including customized introduction and body texts and a Disclaimer link in the footer. The finance messages shall also expire after seven days. In this task, you will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mail sent from the finance department.
 
-1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin**, and there should still be an open PowerShell window with Exchange Online connected.
+1. Log into the LabVM, and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the **New-OMEConfiguration** cmdlet to create a new configuration:
 
@@ -200,15 +197,15 @@ To validate the new custom configuration, you need to use the account of Lynne R
 
 > [!alert] External email restrictions might prevent this message from being received. Branding might not appear as expected.
 
-1. Go back to **Microsoft Edge**  with the InPrivate Outlook on the web window where you should still be logged in as **Lynne Robbins**.
+1. Go back to **Microsoft Edge**  with the InPrivate Outlook on the web window where you should still be logged in as **ODL User**.
 
 1. Select **New mail** from the upper left side part of Outlook on the web.
 
 1. In the **To** line enter your personal or other third-party email address that isn't in the tenant domain. Enter **`Finance Report`** in the subject line and enter **`Secret finance information.`** in the body of the email.
 
-1. Select **Send** to send the message, then close the InPrivate window where you're logged in as Lynne.
+1. Select **Send** to send the message, then close the InPrivate window where you're logged in as ODL User.
 
-1. Sign into your personal email account and open the message from Lynne Robbins.
+1. Sign into your personal email account and open the message from ODL User.
 
 1. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
 

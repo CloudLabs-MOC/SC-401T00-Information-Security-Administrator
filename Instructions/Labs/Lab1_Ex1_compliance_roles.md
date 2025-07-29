@@ -1,16 +1,3 @@
----
-lab:
-    title: 'Exercise 1 - Manage compliance and security roles'
-    module: 'Module 1 - Implement Information Protection'
----
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
 # Lab 1 - Exercise 1 - Manage compliance and security roles
 
 As the recently hired Information Security Administrator for Contoso Ltd., you (Joni Sherman) need to ensure the new Microsoft 365 tenant complies with various legal and regulatory standards. Contoso Ltd. is expanding, and your role is crucial to maintaining compliance across its regions.
@@ -24,9 +11,11 @@ As the recently hired Information Security Administrator for Contoso Ltd., you (
 
 In this task, you'll assign the Compliance Admin role to Joni Sherman.
 
-1. Log into the Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account. The password should be provided by your lab hosting provider.
+1. Open **Microsoft Edge** and navigate to the Microsoft 365 admin center, `https://admin.microsoft.com`, and log in with below credentials.
 
-1. Open **Microsoft Edge** and navigate to the Microsoft 365 admin center, `https://admin.microsoft.com`, and log in as **MOD Administrator**, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 1. On the left sidebar, expand **Users** then select **Active users**.
 
@@ -42,9 +31,9 @@ In this task, you'll assign the Compliance Admin role to Joni Sherman.
 
 1. On the **Manage admin roles** page, select the **X** on the top right corner of the flyout panel to close the panel.
 
-1. Sign out of the MOD Administrator account by selecting the **MA** icon in the top right, then select **Sign out**.
+1. Sign out of the Administrator account by selecting the **O1** icon in the top right, then select **Sign out**.
 
-   ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
+   ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/w7.png)
 
 You have successfully assigned Joni Sherman the Compliance and Security Administrator roles, which is required to complete the tasks in this lab.
 
@@ -52,13 +41,14 @@ You have successfully assigned Joni Sherman the Compliance and Security Administ
 
 In this task, you'll sign in as Joni Sherman to explore the Microsoft Purview portal.
 
-1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account.
-
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+1. When the **Sign in** window is displayed, sign in as **Joni Sherman** with the below credentials.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. A message about the new Microsoft Purview portal will appear on the screen. Select **Get started** to access the new portal.
 
