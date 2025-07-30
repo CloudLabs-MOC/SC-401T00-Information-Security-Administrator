@@ -1,17 +1,3 @@
----
-lab:
-    title: 'Exercise 1 - Configure retention policies'
-    module: 'Module 5 - Implement and manage retention'
----
-
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
 # Lab 5 - Exercise 1 - Implement and manage retention
 
 You are Joni Sherman, a Compliance Administrator at Contoso Ltd. The company is tightening its data security strategy to reduce risk exposure related to financial data and privileged communications. You've been asked to configure Microsoft Purview retention solutions that support audit readiness, limit unnecessary data retention, and ensure proper oversight for sensitive communications.
@@ -49,7 +35,7 @@ In this task, you'll create a retention label for sensitive financial data that 
 1. On the **Define the period** page, ensure these values are set for the retention period configuration input:
 
     - **How long is the period?**: 5 Years
-    - **When should the period begin?**: When items were modified
+    - **When should the period begin?**: When items were last modified
 
 1. Select **Next**.
 
@@ -97,7 +83,56 @@ In this task, you'll publish the retention label so users can apply it in Micros
 
 You've published the retention label, making it available for users to apply in key Microsoft 365 services.
 
-## Task 3 – Create an auto-apply retention label policy
+## Task 3 - Create a Retention Label for Personal Financial PII
+
+In this task, you'll create a retention label for personal financial data that needs to be retained for compliance, auditing, and investigation purposes.
+
+1. In Microsoft Edge, navigate to `https://purview.microsoft.com` and sign in to the Microsoft Purview portal as **Joni Sherman**  
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
+
+2. Navigate to **Solutions** > **Data Lifecycle Management** > **Retention labels**
+
+3. On the **Labels** page, select **Create a label**.
+
+4. On the **Name your retention label** page, enter the following:
+
+- **Name**: `Personal Financial PII`  
+- **Description for users**: `Use for documents or emails that contain personal financial data like bank account or credit card numbers.`  
+- **Description for admins**: `Retains sensitive personal financial information for 3 years to support compliance with privacy regulations and investigations.`
+
+5. Select **Next**.
+
+6. On the **Define label settings** page, select:  
+- **Retain items forever or for a specific period**
+
+7. Then select **Next**.
+
+8. On the **Define the period** page, configure the following:
+
+- **How long is the period?**: `5 Years`  
+- **When should the period begin?**: `When items were created`
+
+9. Select **Next**.
+
+10. On the **Choose what happens after the retention period** page, select:  
+ - **Delete items automatically**
+
+ Then select **Next**.
+
+11. On the **Review and finish** page, review the configuration and select **Create label**.
+
+12. On the **Your retention label is created** page, select the option to:  
+ - **Do nothing**
+
+ Then select **Done**.
+
+
+✅ You've created a retention label named **Personal Financial PII** that retains sensitive personal financial content for **three years** and **deletes it automatically** afterward to reduce risk and comply with regulatory requirements.
+
+
+## Task 4 – Create an auto-apply retention label policy
 
 In this task, you'll configure a policy that automatically applies a retention label to content containing personal financial information.
 
@@ -122,7 +157,7 @@ In this task, you'll configure a policy that automatically applies a retention l
 
 1. On the **Choose the type of retention policy to create​** page, select **Static**.
 
-1. On the **Choose where to publish labels** page select **Let me choose specific locations** and select:
+1. On the **Choose where to publish labels** page, select :
 
     - Exchange mailboxes
     - SharePoint classic and communication sites
@@ -141,7 +176,7 @@ In this task, you'll configure a policy that automatically applies a retention l
 
 You've created an auto-apply policy that identifies personal financial data and applies a retention label automatically.
 
-## Task 4 – Create a static retention policy
+## Task 5 – Create a static retention policy
 
 In this task, you'll create a static retention policy for Microsoft Teams content to help reduce long-term data risk.
 
