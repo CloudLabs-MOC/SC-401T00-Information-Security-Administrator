@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 2 - Implement Adaptive Protection'
-    module: 'Module 3 - Implement Insider Risk Management'
----
-
 # Lab 3 - Exercise 2 - Implement Adaptive Protection
 
 You are Joni Sherman, the Information Security Administrator for Contoso Ltd. Your role involves protecting sensitive data and responding to insider risks. To enhance protection, you'll enable Microsoft Purview Adaptive Protection, which dynamically adjusts data loss prevention (DLP) enforcement based on insider risk levels.
@@ -33,34 +27,7 @@ You are Joni Sherman, the Information Security Administrator for Contoso Ltd. Yo
 
 You've linked an insider risk policy to Adaptive Protection, enabling dynamic risk-based actions across Microsoft Purview.
 
-## Task 2 – Configure adaptive protection settings for your DLP policy
-
-Now that Adaptive Protection is linked to your insider risk policy, you'll update a DLP policy to respond to elevated risk levels by blocking sharing of sensitive data.
-
-1. In Microsoft Purview, navigate to **Solutions** > **Data Loss Prevention** > **Policies**.
-
-1. On the **Policies** page, select the checkbox for the **DLP - Credit Card Protection** policy created in a previous exercise, then select **Edit policy**.
-
-1. In the DLP configuration, select **Next** until you reach the **Customize advanced DLP rules** page.
-
-1. Select the pencil icon next to the **Credit card information rule** to edit it.
-
-1. On the **Edit rule** page:
-   - In the **Description** field, enter: `Block sharing of credit card data when user has an elevated insider risk level.`
-   - In the **Conditions** section, select **Add condition** > **Insider risk level for Adaptive Protection is**.
-   - In the new section, select **Elevated Risk**.
-   - Under **Actions**, set **Restrict access or encrypt the content in Microsoft 365** to **Block everyone**.
-   - Select **Save** to update the rule.
-
-1. Back on the **Customize advanced DLP rules** page, select **Next**.
-
-1. On the **Policy mode** page, keep the policy active, then select **Next**.
-
-1. On the **Review and finish** page, select **Submit**, then select **Done** once your policy is updated.
-
-You've updated your DLP policy to block sharing when insider risk is elevated, strengthening data protection based on user behavior.
-
-## Task 3 – Configure Conditional Access with Adaptive Protection
+## Task 2 – Configure Conditional Access with Adaptive Protection
 
 To add another layer of enforcement, you can use insider risk levels to restrict access using Conditional Access. In this task, you'll create a policy that blocks access for users with an elevated insider risk level.
 
@@ -111,7 +78,7 @@ To add another layer of enforcement, you can use insider risk levels to restrict
 
 You've created a Conditional Access policy that blocks access for elevated-risk users, without affecting access immediately, since the policy is in report-only mode.
 
-## Task 4 – Enable Adaptive Protection
+## Task 3 – Enable Adaptive Protection
 
 In this final task, you'll turn on Adaptive Protection so the system can start applying dynamic enforcement based on insider risk.
 
