@@ -1,17 +1,3 @@
----
-lab:
-    title: 'Exercise 1 - Protect data in AI environments'
-    module: 'Module 4 - Protect data in AI environments'
----
-
-## WWL Tenants - Terms of use
-
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
-
 # Lab 4 - Exercise 1 - Protect data in AI environments
 
 You are Joni Sherman, the Information Security Administrator for Contoso Ltd. As AI tools like Microsoft Copilot become more integrated into daily workflows, your team has been asked to assess and improve protections around sensitive data. In this lab, you'll explore how Microsoft Purview DSPM for AI can help secure data interactions with AI tools through policy enforcement, risk detection, and exposure assessments.
@@ -27,9 +13,10 @@ You are Joni Sherman, the Information Security Administrator for Contoso Ltd. As
 
 To reduce the risk of data loss through AI assistants, you'll start by creating a DLP policy using the Fortify your data security recommendation. This policy uses Adaptive Protection to restrict pasting or uploading sensitive data into AI tools like ChatGPT and Copilot in Edge, Chrome, and Firefox.
 
-1. Sign into the Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in as **Joni Sherman**
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in as **Joni Sherman**, `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. In Microsoft Purview, navigate to DSPM for AI by selecting **Solutions** > **DSPM for AI** > **Recommendations**
 
@@ -37,7 +24,7 @@ To reduce the risk of data loss through AI assistants, you'll start by creating 
 
 1. In the **Data security for AI** flyout page, review the summary, then select **Create policies**. This creates a preconfigured DLP policy targeting generative AI sites.
 
-1. Once the policy has been created, select **View policy**.
+1. Once the policy has been created, select **Policies** button.
 
 1. In the **Policy details** section, select **Edit policy in solution** to open the **Data Loss Prevention** solution in Microsoft Purview.
 
@@ -78,7 +65,7 @@ Next, you'll create a policy that helps detect risky prompt behavior in Copilot.
 
 1. In the **Detect risky interactions in AI apps (preview)** flyout page, review the summary, then select **Create policy**.
 
-1. Once the policy is created, select **View policy**.
+1. Once the policy is created, select **Policies** button.
 
 1. In the **Policy details** section, select **Edit policy in solution** to open the **Insider Risk Management** area of Microsoft Purview.
 
@@ -131,8 +118,6 @@ You can further reduce risk by preventing Copilot from processing or responding 
    - **Name**: `Prevent Copilot from accessing labeled data`
    - Under **Conditions**, select **Add condition** > **Content contains** > **Sensitivity labels**. Add these sensitivity labels:
      - `Trusted People`
-     - `Project - Falcon`
-     - `Financial Data`
    - Select **Add**
    - Under **Actions** select **Add an action** > **Prevent Copilot from processing content (preview)**
    - Select **Save** at the bottom of the **Create rule** flyout.
