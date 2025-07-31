@@ -193,7 +193,7 @@ You've configured a transport rule that ensures emails from the finance departme
 
 ## Task 5 – Validate custom branding behavior
 
-To validate the new custom configuration, you need to use the account of Lynne Robbins again, who is a member of the finance team.
+To validate the new custom configuration, you need to use the account of **ODL User** again, who is a member of the finance team.
 
 > [!alert] External email restrictions might prevent this message from being received. Branding might not appear as expected.
 
@@ -207,9 +207,7 @@ To validate the new custom configuration, you need to use the account of Lynne R
 
 1. Sign into your personal email account and open the message from ODL User.
 
-1. You should see a message from Lynne Robbins that looks like the image below.  Select **Read the message**.
-
-    ![Sample encrypted email from Lynne Robbins. ](../Media/EncryptedEmail.png)
+1. You should see a message from **ODL User**.  Select **Read the message**.
 
 1. In the customized configuration, both authentication options are available, indicating that social ID sign-in is enabled. Select **Sign in with a One-time passcode** to receive a limited time passcode.
 
