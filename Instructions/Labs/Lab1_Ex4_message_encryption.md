@@ -9,6 +9,7 @@ Joni Sherman, the Information Security Administrator for Contoso Ltd., has been 
 1. Validate default branding behavior
 1. Create custom branding template
 1. Validate custom branding behavior
+1. Apply a sensitivity label in Word
 
 ## Task 1 – Verify Azure RMS functionality
 
