@@ -2,13 +2,15 @@
 
 You are Joni Sherman, a Compliance Administrator at Contoso Ltd. The company is tightening its data security strategy to reduce risk exposure related to financial data and privileged communications. You've been asked to configure Microsoft Purview retention solutions that support audit readiness, limit unnecessary data retention, and ensure proper oversight for sensitive communications.
 
-**Tasks**:
+## Lab Objectives
 
-1. Create a retention label
-1. Publish a retention label
-1. Create an auto-apply retention label policy
-1. Create a static retention policy
-1. Recover SharePoint content
+In this lab, you will perform the following:
+
+- Task 01: Create a retention label
+- Task 02: Publish a retention label
+- Task 03: Create an auto-apply retention label policy
+- Task 04: Create a static retention policy
+- Task 05: Recover SharePoint content
 
 ## Task 1 – Create a retention label
 
@@ -309,24 +311,81 @@ You've created a retention policy that applies to content owned by privileged gr
 
 In this task, you'll simulate restoring a deleted document from a SharePoint site to validate your recovery options.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged in as Joni Sherman in Microsoft Purview.
+1. You should still be logged into **LabVM**, signed in as demouser, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. Select the App launcher (the grid icon) in the top-left corner, then select **SharePoint** from the sub-menu.
+1. Select the **App launcher (the grid icon) (1)** in the top-left corner, then select **SharePoint (2)** from the sub-menu.
 
-   ![Screenshot showing where there ellipses is to display the action menu.](../Media/sharepoint-app-launcher.png)
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-2.png)
 
-1. On the SharePoint landing page, search for `Benefits` then select **Benefits @ Contoso** from the search results.
+1. Choose **+ Create site**  to create new sites in sharepoint.
 
-1. In the left sidebar select **Documents**.
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-13.png)
 
-1. On the **Documents** page, select the checkbox for **Vacation Policies.pptx** then select **Delete** from the action bar.
+1. On the **Create a site: Select the site type** page, select **Communication site** option.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-14.png)
+
+1. Under Select a template, choose **Standard communication (2)** from **From Microsoft (1)** provided options.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-15.png)
+
+1. From the **Preview and use Standard communication template** page, select **Use template**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-16.png)
+
+1. From **Give your site a name** page, provide Site name as **Communication site (1)** and choose **Next (2)**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-17.png)
+
+1. From **Set language and other options** page, under **Select a language** choose **English (1)** then select **Create site (2)**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-18.png)
+
+1. On the SharePoint landing page, select **My sites (1)** from the left toolbar then choose **Communication site (2)**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-10.png)
+
+1. In the Communication site page, select **Documents (1) >> + New (2) >> PowerPoint presentation (3)**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-12.png)
+
+1. On the new presentation page, select **Presentation (1)** then rename it with **Vacation Policies (2)**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-11.png)
+
+1. Navigate back to the **Documents** page, select the checkbox for **Vacation Policies.pptx (1)** then select **Delete (2)** from the action bar.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-4.png)
 
 1. On the **Delete?** dialog, select **Delete**.
 
-1. On the left sidebar, select **Recycle bin**.
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-5.png)
 
-1. On the **Recycle bin** page, right click **Vacation Policies.pptx**, then select **Restore**.
+1. On the top right corner toolbar, select **Settings (1) >> Site contents (2)**.
 
-1. On the left sidebar, select **Documents** and notice the file has been restored.
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-6.png)
+
+1. Select **Recycle bin** option from the top right corner of the page.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-7.png)
+
+
+1. On the **Recycle bin** page, right click **Vacation Policies.pptx (1)**, then select **Restore (2)**.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-8.png)
+
+1. On the left sidebar, select **Documents (1)** and notice the **Vacation Policies.pptx (2)** file has been restored.
+
+   ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-9.png)
 
 You have successfully recovered a deleted document from a SharePoint Site.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Create a retention label
+- Publish a retention label
+- Create an auto-apply retention label policy
+- Create a static retention policy
+- Recover SharePoint content
