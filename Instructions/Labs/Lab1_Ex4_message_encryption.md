@@ -14,7 +14,7 @@ Joni Sherman, the Information Security Administrator for Contoso Ltd., has been 
 
 In this task, you'll verify the correct Azure RMS functionality of your tenant.
 
-1. In the LabVM, Open PowerShell by right-clicking the Start button in the taskbar and selecting **Terminal (Admin)**.
+1.  On the **Lab VM**, launch Windows PowerShell with administrative privileges.
 
 1. Run the **Install Module** cmdlet in the terminal window to install the latest **Exchange Online PowerShell** module version:
 
