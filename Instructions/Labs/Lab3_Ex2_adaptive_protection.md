@@ -5,7 +5,6 @@ You are Joni Sherman, the Information Security Administrator for Contoso Ltd. Yo
 **Tasks**:
 
 1. Assign an insider risk policy to Adaptive Protection
-1. Configure adaptive protection settings for your DLP policy
 1. Configure Conditional Access with Adaptive Protection
 1. Enable Adaptive Protection
 
