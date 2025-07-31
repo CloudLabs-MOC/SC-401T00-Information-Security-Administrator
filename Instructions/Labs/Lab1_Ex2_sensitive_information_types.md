@@ -292,7 +292,7 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 1. Back in the terminal window, download the database schema definition of the EDM-based classification sensitive information type by running this script in PowerShell. For the **DataStoreName**, this is where you'll use the schema name saved from the previous task.
 
     ``` powershell
-    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedbSchema /OutputDir "C:\Users\Admin\Documents\"
+    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedbSchema /OutputDir "C:\Users\demouser\Documents\"
     ```
 
     You should get a message that the command completed successfully.
@@ -302,7 +302,7 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 1. Hash the database file and upload it to the EDM-based classification sensitive information type by running the following script in PowerShell:
 
     ``` powershell
-    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedbSchema /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedbSchema.xml"
+    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedbSchema /DataFile "C:\Users\demouser\Documents\EmployeeData.csv" /HashLocation "C:\Users\demouser\Documents\" /Schema "C:\Users\demouser\Documents\employeedbSchema.xml"
     ```
 
     You should get a message that the command completed successfully.
