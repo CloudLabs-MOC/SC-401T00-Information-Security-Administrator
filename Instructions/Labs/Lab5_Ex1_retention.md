@@ -14,9 +14,10 @@ You are Joni Sherman, a Compliance Administrator at Contoso Ltd. The company is 
 
 In this task, you'll create a retention label for sensitive financial data that needs to be retained for auditing and investigation purposes.
 
-1. Log into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. In Microsoft Edge, navigate to `https://purview.microsoft.com` and sign in to the Microsoft Purview portal as **Joni Sherman**, using below credentials.
 
-1. In Microsoft Edge, navigate to `https://purview.microsoft.com` and sign in to the Microsoft Purview portal as **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Joni's password was set in a previous exercise.
+      - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+      - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Navigate to **Solutions** > **Data Lifecycle Management** > **Retention labels**.
 
