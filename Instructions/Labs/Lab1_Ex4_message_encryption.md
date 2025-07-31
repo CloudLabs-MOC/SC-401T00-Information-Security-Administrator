@@ -218,3 +218,31 @@ To validate the new custom configuration, you need to use the account of **ODL U
 1. Review the encrypted message with custom branding. Close the window with your email account open.
 
 You have successfully tested the new customized template.
+
+## Task 6 – Apply a sensitivity label in Word
+
+In this task, you'll verify that published sensitivity labels are available to users and can be applied directly from Microsoft Word.
+
+1. In Microsoft Edge, navigate to `https://word.office.com` and sign in to the Microsoft Office **Joni Sherman** 
+
+    - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+    - **Password:** **<inject key="User 01 Password"></inject>**
+
+1. Select **Blank document**.
+
+1. If prompted, close the **Your privacy options** dialog.
+
+1. Enter the following text into the document:
+
+   `Important HR employee document.`
+
+1. Select **Sensitivity** from the navigation ribbon and select **Internal** > **Employee Data (HR)** to apply the newly created sensitivity label to this document.
+
+    ![Screenshot showing the sensitivity label button in Word.](../Media/word_label.png)
+
+    > [!Note] It can take 24-48 hours for newly published sensitivity labels to be available for application. 
+
+1. In the upper left of the document, select **Document** to rename this file, and rename it to **`HR Document`**. Press enter to apply this name change.
+
+You've verified that the HR sensitivity label is available and applies the appropriate protections to a Word document.
+
