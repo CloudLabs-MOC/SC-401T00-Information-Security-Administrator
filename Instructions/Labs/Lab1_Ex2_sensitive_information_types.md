@@ -115,11 +115,11 @@ In this task, you'll create the role group to create an EDM classifier and add J
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. From the left pane, expand **Teams & groups** then select **Active teams & groups**.
+1. From the left pane, chosse **Show all** option. expand **Groups** then select **Active groups**.
 
-1. On the top of the **Active teams and groups** page, select **Security groups** then select **+ Add a security group**.
+1. On the top of the **Active groups** page, select **Security groups** then select **+ Add a security group**.
 
-    ![Screenshot of the Add a group button.](../Media/add-security-group.png)
+    ![Screenshot of the Add a group button.](../Media/mod1-ex2-task3-1.png)
 
 1. On the **Set up the basics** screen, enter:
 
@@ -147,6 +147,13 @@ In this task, you'll create the role group to create an EDM classifier and add J
 1. Sign out of the Mod Administrator account by selecting the MA icon on the top right of the window, then selecting **Sign out** and closing the browser window.
 
 You have successfully created the **EDM_DataUploaders group** and assigned Joni access to create an EDM classifier.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="f2bc687b-5816-4485-aeb5-fffc1c071962" />
 
 ## Task 4 –  Create EDM-based classification information type
 
