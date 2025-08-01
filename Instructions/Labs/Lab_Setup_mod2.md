@@ -164,10 +164,10 @@ In this task, you will create a new Microsoft 365 (M365) group and ensure it is 
 
    ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/mod6-ex1-021.png)
 
-1. Scroll down, select **No members selected (1)**, then choose **Debra Berger (2)**, **Lynne Robbins (2)** and **Megan Bowen (2)**. Choose **Select (3)** option.
+1. Scroll down, select **No members selected (1)**, then choose **Debra Berger (2)**, **Lynne Robbins (2)** and **Megan Bowen (2)**, **ODL_User <inject key="DeploymentID" enableCopy="false" /></inject>(2)**. Choose **Select (3)** option.
 
-   ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/mod6-ex1-23.png)
+   ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/sc401-labsetup-1.png)
 
-1. After selecting all three members, choose **Create** to provision the M365 group.
+1. After selecting all four members, choose **Create** to provision the M365 group.
 
-   ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/mod6-ex1-24.png)
+   ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/sc401-labsetup-2.png)
