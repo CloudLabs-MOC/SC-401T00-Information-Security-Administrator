@@ -2,15 +2,17 @@
 
 Joni Sherman, the Information Security Administrator at Contoso Ltd., is updating the organization's information protection strategy after previous incidents involving the unintentional sharing of personal data in support tickets. She needs to create and test custom sensitive information types that help detect employee IDs and references to personal health information in documents and emails.
 
-**Tasks**:
+## Lab Objectives
 
-1. Create custom sensitive information types
-1. Modify confidence level to reduce false positives
-1. Create a security group and assign roles to create an EDM classifier
-1. Create EDM-based classification information type
-1. Create EDM-based classification data source
-1. Create keyword dictionary
-1. Test custom sensitive information types
+In this lab, you will perform the following:
+
+- Task 01: Create custom sensitive information types
+- Task 02: Modify confidence level to reduce false positives
+- Task 03: Create a security group and assign roles to create an EDM classifier
+- Task 04: Create EDM-based classification information type
+- Task 05: Create EDM-based classification data source
+- Task 06: Create keyword dictionary
+- Task 07: Test custom sensitive information types
 
 ## Task 1 – Create custom sensitive information types
 
@@ -446,3 +448,15 @@ Always test custom sensitive information types before using them in policies. Ot
 1. On the **Match results** page, review the matches, then select **Finish** to end the test.
 
 You've successfully tested the two custom sensitive information types and validated that the search patterns work as expected.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Created custom sensitive information types
+- Modified confidence level to reduce false positives
+- Created a security group and assign roles to create an EDM classifier
+- Created EDM-based classification information type
+- Created EDM-based classification data source
+- Created keyword dictionary
+- Tested custom sensitive information types

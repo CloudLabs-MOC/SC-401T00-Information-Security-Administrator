@@ -2,13 +2,15 @@
 
 In this lab, you'll configure and prepare your environment for administration tasks. You'll enable required features, configure permissions, and prepare core services for administration.
 
-**Tasks:**
+## Lab Objectives
 
-1. Enable Audit in the Microsoft Purview portal  
-1. Enable device onboarding  
-1. Enable insider risk analytics and data sharing  
-1. Set user passwords for lab exercises  
-1. Initialize Microsoft Defender XDR
+In this lab, you will perform the following:
+
+- Task 01: Enable Audit in the Microsoft Purview portal  
+- Task 02: Enable device onboarding
+- Task 03: Enable insider risk analytics and data sharing
+- Task 04: Initialize Microsoft Defender XDR
+- Task 05: Create a new M365 group
 
 ## Task 1 - Enable Audit in the Microsoft Purview portal
 
@@ -133,7 +135,7 @@ In this task, you'll open Microsoft Defender and wait for Microsoft Defender XDR
 
 1. From the navigation pane, select **Investigation & response** > **Incidents & alerts** > **Incidents**.
 
-> [!note] **Note**: The Microsoft Defender XDR initialization screen might or might not appear depending on your lab tenant. If it appears, you can continue with other tasks while it completes in the background.
+    > **Note**: The Microsoft Defender XDR initialization screen might or might not appear depending on your lab tenant. If it appears, you can continue with other tasks while it completes in the background.
 
 1. You'll see a message stating that Microsoft Defender XDR is being prepared. This process runs automatically and might take a few minutes.
 
@@ -141,7 +143,7 @@ In this task, you'll open Microsoft Defender and wait for Microsoft Defender XDR
 
 Microsoft Defender XDR is being initialized. You can continue with other tasks while it finishes setting up.
 
-## Task 4 – Create a new M365 group
+## Task 5 – Create a new M365 group
 
 In this task, you will create a new Microsoft 365 (M365) group and ensure it is properly provisioned with an associated Exchange mailbox and SharePoint site. This setup is essential to make the group eligible as a data source in Microsoft Purview eDiscovery.
 
@@ -171,3 +173,5 @@ In this task, you will create a new Microsoft 365 (M365) group and ensure it is 
 1. After selecting all four members, choose **Create** to provision the M365 group.
 
    ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/sc401-labsetup-2.png)
+
+You have now set up your environment and are ready to begin administration.

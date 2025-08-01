@@ -2,10 +2,12 @@
 
 As the recently hired Information Security Administrator for Contoso Ltd., you (Joni Sherman) need to ensure the new Microsoft 365 tenant complies with various legal and regulatory standards. Contoso Ltd. is expanding, and your role is crucial to maintaining compliance across its regions.
 
-**Tasks**:
+## Lab Objectives
 
-1. Assign compliance and security roles
-1. Explore the Microsoft Purview portal
+In this lab, you will perform the following:
+
+- Task 01: Assign compliance and security roles
+- Task 02: Explore the Microsoft Purview portal
 
 ## Task 1 – Assign compliance and security roles
 
@@ -55,3 +57,10 @@ In this task, you'll sign in as Joni Sherman to explore the Microsoft Purview po
 1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
 You have successfully switched to Joni Sherman's account and are now ready to start the lab.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Assigned compliance and security roles
+- Explored the Microsoft Purview portal

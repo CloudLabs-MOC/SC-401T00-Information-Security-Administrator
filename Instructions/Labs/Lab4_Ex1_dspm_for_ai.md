@@ -2,12 +2,14 @@
 
 You are Joni Sherman, the Information Security Administrator for Contoso Ltd. As AI tools like Microsoft Copilot become more integrated into daily workflows, your team has been asked to assess and improve protections around sensitive data. In this lab, you'll explore how Microsoft Purview DSPM for AI can help secure data interactions with AI tools through policy enforcement, risk detection, and exposure assessments.
 
-**Tasks**:
+## Lab Objectives
 
-1. Use DSPM for AI to create a DLP policy for generative AI sites
-1. Create an insider risk policy to detect risky AI interactions
-1. Block Copilot from accessing labeled content
-1. Run a data assessment to detect unlabeled content
+In this lab, you will perform the following:
+
+- Task 01: Use DSPM for AI to create a DLP policy for generative AI sites
+- Task 02: Create an insider risk policy to detect risky AI interactions
+- Task 03: Block Copilot from accessing labeled content
+- Task 04: Run a data assessment to detect unlabeled content
 
 ## Task 1 – Use DSPM for AI to create a DLP policy for generative AI sites
 
@@ -160,3 +162,12 @@ To understand potential gaps in labeling coverage, you'll run a data risk assess
 1. On the **Data assessment successfully created** page, select **Done**.
 
 You've now used Microsoft Purview DSPM for AI to detect AI-related risks, enforce policies, and assess sensitive data exposure, helping your organization use AI securely.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Use DSPM for AI to create a DLP policy for generative AI sites
+- Create an insider risk policy to detect risky AI interactions
+- Block Copilot from accessing labeled content
+- Run a data assessment to detect unlabeled content

@@ -2,15 +2,17 @@
 
 Joni Sherman, an Information Security Administrator at Contoso Ltd., is rolling out a sensitivity labeling strategy to help protect sensitive data across departments. As part of this effort, she's configuring manual and automatic labeling, sublabels, and encryption options, including support for Double Key Encryption (DKE) and integration with Microsoft Defender for Cloud Apps.
 
-**Tasks**:
+## Lab Objectives
 
-1. Enable support for sensitivity labels
-1. Create a sensitivity label
-1. Create a sublabel
-1. Publish sensitivity labels
-1. Configure auto labeling
-1. Create and publish a DKE label for highly confidential content
-1. Enable Microsoft Purview integration in Defender for Cloud Apps
+In this lab, you will perform the following:
+
+- Task 01: Enable support for sensitivity labels
+- Task 02: Create a sensitivity label
+- Task 03: Create a sublabel
+- Task 04: Publish sensitivity labels
+- Task 05: Configure auto labeling
+- Task 06: Create and publish a DKE label for highly confidential content
+- Task 07: Enable Microsoft Purview integration in Defender for Cloud Apps
 
 ## Task 1 – Enable support for sensitivity labels
 
@@ -174,7 +176,7 @@ You have successfully published the Internal and HR sensitivity labels. Note tha
 
 In this task, you'll create a sensitivity label for financial data and configure it to apply automatically to content containing specific financial identifiers, such as credit card numbers and bank routing information.
 
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-cl1\admin** account.
+1. You should still be logged into the **LabVM**, signed in as demouser.
 
 1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com` and log into the Microsoft Purview portal as **Joni Sherman**.
 
@@ -381,3 +383,14 @@ In this task, you'll enable Microsoft Purview integration in Microsoft Defender 
 
 You've enabled Defender for Cloud Apps to scan files for sensitivity labels and monitor files so that file policies can evaluate and apply governance actions.
 
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Enable support for sensitivity labels
+- Create a sensitivity label
+- Create a sublabel
+- Publish sensitivity labels
+- Configure auto labeling
+- Create and publish a DKE label for highly confidential content
+- Enable Microsoft Purview integration in Defender for Cloud Apps

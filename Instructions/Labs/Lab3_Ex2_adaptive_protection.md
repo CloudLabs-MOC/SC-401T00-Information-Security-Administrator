@@ -2,11 +2,13 @@
 
 You are Joni Sherman, the Information Security Administrator for Contoso Ltd. Your role involves protecting sensitive data and responding to insider risks. To enhance protection, you'll enable Microsoft Purview Adaptive Protection, which dynamically adjusts data loss prevention (DLP) enforcement based on insider risk levels.
 
-**Tasks**:
+## Lab Objectives
 
-1. Assign an insider risk policy to Adaptive Protection
-1. Configure Conditional Access with Adaptive Protection
-1. Enable Adaptive Protection
+In this lab, you will perform the following:
+
+- Task 01: Assign an insider risk policy to Adaptive Protection
+- Task 02: Configure Conditional Access with Adaptive Protection
+- Task 03: Enable Adaptive Protection
 
 ## Task 1 – Assign an insider risk policy to Adaptive Protection
 
@@ -103,3 +105,11 @@ In this final task, you'll turn on Adaptive Protection so the system can start a
 1. Toggle **Adaptive Protection** to **On**, then select **Save**.
 
 You've successfully enabled Adaptive Protection. Enforcement actions will now adjust automatically based on a user's insider risk level.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Assign an insider risk policy to Adaptive Protection
+- Configure Conditional Access with Adaptive Protection
+- Enable Adaptive Protection

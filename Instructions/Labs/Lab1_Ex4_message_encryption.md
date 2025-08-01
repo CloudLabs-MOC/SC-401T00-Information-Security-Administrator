@@ -2,14 +2,16 @@
 
 Joni Sherman, the Information Security Administrator for Contoso Ltd., has been tasked with ensuring secure communication between departments. To support this, she is configuring Microsoft Purview Message Encryption for Contoso, including modifying the default settings and creating a custom branding experience for the finance department.
 
-**Tasks**:
+## Lab Objectives
 
-1. Verify Azure RMS functionality
-1. Modify default branding template
-1. Validate default branding behavior
-1. Create custom branding template
-1. Validate custom branding behavior
-1. Apply a sensitivity label in Word
+In this lab, you will perform the following:
+
+- Task 01: Verify Azure RMS functionality
+- Task 02: Modify default branding template
+- Task 03: Validate default branding behavior
+- Task 04: Create custom branding template
+- Task 05: Validate custom branding behavior
+- Task 06: Apply a sensitivity label in Word
 
 ## Task 1 – Verify Azure RMS functionality
 
@@ -62,7 +64,7 @@ You have successfully installed the Exchange Online PowerShell module, connected
 
 There is a requirement in your organization to restrict trust for foreign identity providers, such as Google or Facebook. Because these social IDs are activated by default for accessing messages protected with message encryption, you need to deactivate the use of social IDs for all users in your organization.
 
-1. You should still be logged into your Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and there should still be an open PowerShell window with Exchange Online connected.
+1. You should still be logged into the **LabVM**, signed in as demouser and there should still be an open PowerShell window with Exchange Online connected.
 
 1. Run the **Get-OMEConfiguration** cmdlet to view the default configuration:
 
@@ -247,3 +249,13 @@ In this task, you'll verify that published sensitivity labels are available to u
 
 You've verified that the HR sensitivity label is available and applies the appropriate protections to a Word document.
 
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Verified Azure RMS functionality
+- Modified default branding template
+- Validated default branding behavior
+- Created custom branding template
+- Validated custom branding behavior
+- Applied a sensitivity label in Word
