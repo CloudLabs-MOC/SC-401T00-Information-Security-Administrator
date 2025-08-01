@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab0_Ex0_Lab_Setup.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/getting-started-1.md",
         "Order": 1
       },  
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/getting-started-1.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab_Setup_mod2.md",
         "Order": 2
       },      
       {
