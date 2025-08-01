@@ -1,0 +1,64 @@
+[
+  {
+    "Name": "SC-401:Information Security Administrator Associate",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/getting-started-1.md",
+        "Order": 1
+      },  
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab_Setup_mod2.md",
+        "Order": 2
+      },      
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex1_compliance_roles.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex2_sensitive_information_types.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex3_sensitivity_labels.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab1_Ex4_message_encryption.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab2_Ex1_DLP_policies.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab2_Ex2_endpoint_DLP.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab3_Ex1_insider_risk_management.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab3_Ex2_adaptive_protection.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab6_Ex1_audit.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab6_Ex2_content_search.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab4_Ex1_dspm_for_ai.md",
+        "Order": 13
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab5_Ex1_retention.md",
+        "Order": 14
+      }
+    ]
+  }
+]
