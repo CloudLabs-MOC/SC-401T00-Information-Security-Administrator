@@ -17,7 +17,24 @@ In this lab, you will perform the following:
 
 In this task, you'll onboard a Windows 11 device so it's ready to be protected by endpoint DLP policies.
 
-1. Log into **Client VM (clientvm-<inject key="DeploymentID" enableCopy="false" /></inject>)** as the **azureuser** account.
+1. Search **RDP (1)** in windows search bar and select **Remote Desktop Connection (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/sc401-mod2-new-1.png)
+
+1. Log into **Client VM (clientvm-<inject key="DeploymentID" enableCopy="false" /></inject>)** using following credentials: 
+
+    - Computer: Provide DNS name as **<inject key="ClientVM DNS Name" enableCopy="false" /></inject> (1)**. Then choose **Connect (2)**
+
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/sc401-mod2-new-2.png)
+
+    - User: .\ **<inject key="ClientVM Admin Username" enableCopy="false" /></inject> (1)**
+    - Password: **<inject key="ClientVM Admin Password" enableCopy="false" /></inject> (2)**. Then , choose **OK (3)**
+
+        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/sc401-mod2-new-3.png)
+
+1. After that, choose **Yes** to verify the certificate.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/sc401-mod2-new-4.png)
 
 1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
 
