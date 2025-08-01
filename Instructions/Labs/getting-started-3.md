@@ -1,5 +1,7 @@
 # SC-401: Information Security Administrator
 
+## Lab 03- Implementing Retention and Data Protection Strategies for AI Workloads
+
 ## Overall Estimated Duration: 2 Hours
 
 ## Overview

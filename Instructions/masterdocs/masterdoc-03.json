@@ -6,14 +6,18 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab0_Ex0_Lab_Setup.md",
         "Order": 1
+      },     
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/getting-started-3.md",
+        "Order": 2
       },      
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab4_Ex1_dspm_for_ai.md",
-        "Order": 2
+        "Order": 3
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-401T00-Information-Security-Administrator/refs/heads/prod/Instructions/Labs/Lab5_Ex1_retention.md",
-        "Order": 3
+        "Order": 4
       }
     ]
   }

@@ -1,5 +1,7 @@
 # SC-401: Information Security Administrator
 
+## Lab 02- Implementing Data Protection and Compliance Monitoring in Microsoft Purview
+
 ## Overall Estimated Duration: 4 Hours
 
 ## Overview

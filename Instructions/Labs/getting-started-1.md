@@ -1,5 +1,7 @@
 # SC-401: Information Security Administrator
 
+## Lab 01- Implement Information Protection
+
 ## Overall Estimated Duration: 3 Hours
 
 ## Overview
