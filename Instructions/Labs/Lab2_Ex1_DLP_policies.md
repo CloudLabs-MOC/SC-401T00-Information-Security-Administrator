@@ -16,6 +16,86 @@ In this lab, you will perform the following:
 - Task 06: Enable file inspection in Microsoft 365 Defender
 - Task 07: Create a file policy for Microsoft 365 Defender
 
+## Lab prerequisites: Create custom sensitive information types
+
+You'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
+
+1. In **Microsoft Edge**, navigate to **https://purview.microsoft.com** and log into the Microsoft Purview portal as **Joni Sherman**.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
+
+1. On the left sidebar, select **Solutions (1)** then select **Information Protection**.
+
+    - On the left sidebar, expand **Classifiers (2)** then select **Sensitive info types (3)**.
+
+    - On the Sensitive info types page, select **+ Create sensitive info type (4)** to start the sensitive information type configuration.
+
+      ![](../Media/s8.png)   
+
+1. On the Name your **sensitive info type** page, enter:
+
+    - Name: **Contoso Employee IDs (1)**
+    - Description: **Pattern for Contoso employee IDs (2)**
+    - Select **Next (3)**   
+
+      ![](../Media/s9.png)     
+
+1. On the **Define patterns for this sensitive info type** page, select **Create pattern (1)**.
+
+    - On the **New pattern** flyout panel on the right, select **+ Add primary element (2)** > **Regular expression (3)**.
+
+      ![](../Media/s10.png)    
+
+1. On the **Add a regular expression​** flyout panel on the right, enter:
+
+   - **ID**: `Contoso IDs` **(1)**
+   - **Regular expression**: `[A-Z]{3}[0-9]{6}` **(2)**
+   - Select the radio button for **_String match_ (3)**
+   - Select **Done (4)**
+
+     ![](../Media/s11.png) 
+
+1. Back on the **New pattern** flyout panel, under **Supporting elements**, select **+ Add supporting elements or group of elements (1)** drop-down menu and select **Keyword list (2)**.
+
+    ![](../Media/s12.png)
+
+1. On the **Add a keyword list** flyout panel on the right, enter:
+
+   - **ID**: `Employee ID keywords` **(1)**
+   - **Case insensitive (2)(3)**:
+
+      ```text
+      Employee
+      ```     
+
+      ```text
+      ID
+      ```      
+    - Select the radio button for **_Word match_ (4)**
+
+    - Select **Done (5)** at the bottom of the flyout panel.  
+
+      ![](../Media/s13.png)     
+
+1. Back on the **New pattern** flyout panel, under **Character proximity**, decrease the **Detect primary AND supporting elements** value to `100` characters **(1)** and then **Create (2)**.
+
+    ![](../Media/s14.png)
+
+1. Back on the **Define patterns for this sensitive info type** page select **Next**.
+
+    ![](../Media/s15.png)
+
+1. On the **Choose the recommended confidence level to show in compliance policies** page use the default value and select **Next**.
+
+1. On the **Review settings and finish** page review the settings and select **Create**.
+
+    ![](../Media/s16.png)
+
+1. When successfully created select **Done**.       
+
+    ![](../Media/s17.png)
+
 ## Task 1 – Create a DLP policy in simulation mode
 
 In this task, you'll create a DLP policy in simulation mode that targets credit card numbers in Teams messages. The policy will notify users when they attempt to share sensitive content and allow them to override with justification.
@@ -54,7 +134,7 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-7.png)
 
-1. On the **Choose locations to apply the policy** page, enable the location for **Teams chat and channel messages (1)** only. If any other locations are selected, deselect them. Then select **Next (2)**.
+1. On the **Choose where to apply the policy** page, enable the location for **Teams chat and channel messages (1)** only. If any other locations are selected, deselect them. Then select **Next (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-8.png)
 
@@ -73,7 +153,7 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-11.png)
 
 1. In the **Content is shared from Microsoft 365** section:
-    - Select the option for **with people outside my organization (1)**.
+    - Select the option for **with people outside my organization (1)** from the drop down
     - Select **+ Add condition (2)** > **Content contains (3)**.
 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-12.png)
@@ -103,9 +183,11 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-17.png)
 
 1. Under **Incident reports**, in the **Use this severity level in admin alerts and reports** dropdown:
-    - Select **Low**.
+    - Select **Low (1)**.
 
-1. At the bottom of the **Create rule** flyout panel, select **Save**.
+    - At the bottom of the **Create rule** flyout panel, select **Save (2)**.
+
+      ![](../Media/s7.png)    
 
 1. Back on the **Customize advanced DLP rules**, select **Next**.
 
@@ -243,11 +325,13 @@ When multiple policies exist, their priority determines which one applies first.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open to the **Policies** page. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
-1. On the **Policies** page, select the **EmployeeID DLP Policy**. Select **Reprioritize** from the top navigation ribbon, then select **Move to top (highest priority)**.
+1. On the **Policies (1)** page, select the **EmployeeID DLP Policy (2)**. Select **Reprioritize (3)** from the top navigation ribbon, then select **Move to top (highest priority) (4)**.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-26.png)
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s18.png)
 
 1. In the **Data loss prevention** window, select **Refresh** and review the priority in the **Order** column of the policy table.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s19.png)
 
 1. Sign out of Joni's account by selecting her icon in the top right, then select **Sign out**.
 
