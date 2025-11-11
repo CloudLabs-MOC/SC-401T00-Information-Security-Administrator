@@ -19,15 +19,21 @@ In this task, you'll assign the Compliance Admin role to Joni Sherman.
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. On the left sidebar, expand **Users** then select **Active users**.
+1. On the left sidebar, expand **Users (1)** then select **Active users (2)**.
 
-1. On the **Active users** page, search for `Joni`, then select **Joni Sherman**.
+1. On the **Active users** page, search for `Joni` **(3)**, then select **Joni Sherman (4)**.
+
+    ![](../Media/lab1--11-1.png)
 
 1. The properties for Joni's account are displayed in a flyout panel on the right. Select **Manage roles** on the flyout panel.
 
+    ![](../Media/lab1--11-2.png)
+
 1. On the **Manage admin roles** panel, select **Admin center access**, then scroll down to expand **Show all by category**.
 
-1. Under the **Security & Compliance** category, select the checkbox for **Compliance Administrator** and **Security Administrator**, then select **Save changes** at the bottom of the flyout panel.
+1. Under the **Security & Compliance** category, select the checkbox for **Compliance Administrator (1)** and **Security Administrator (2)**, then select **Save changes (3)** at the bottom of the flyout panel.
+
+    ![](../Media/lab1--11-3.png)
 
 1. You should see a message: **Admin roles updated**.
 
@@ -64,3 +70,7 @@ In this lab, you have completed the following tasks:
 
 - Assigned compliance and security roles
 - Explored the Microsoft Purview portal
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-6.png)

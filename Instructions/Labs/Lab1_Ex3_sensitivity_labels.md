@@ -28,9 +28,11 @@ In this task, you'll enable co-authoring for sensitivity labels, which also enab
 
 1. On the **Information Protection settings** ensure you're on the **Co-authoring for files with sensitivity labels** tab.
 
-1. Select the checkbox for **Turn on co-authoring for files with sensitivity labels**.
+1. Select the checkbox for **Turn on co-authoring for files with sensitivity labels (1)**.
 
-1. Select **Apply** at the bottom of the screen.
+1. Select **Apply (2)** at the bottom of the screen.
+
+    ![](../Media/lab3-11-1.png)
 
 You have successfully enabled support for sensitivity labels for files in SharePoint and OneDrive.
 
@@ -67,7 +69,9 @@ In this task, you'll create a parent sensitivity label for internal content. Thi
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
+1. On the **Your sensitivity label was created** page, select **Don't create a policy yet (1)**, then select **Done (2)**.
+
+    ![](../Media/lab3-11-2.png)
 
 You've created a sensitivity label for internal use. This label will act as a parent label for more specific sublabels used across different departments.
 
@@ -128,7 +132,7 @@ Now that you have a base label, you'll create a sublabel for HR-related document
 
 You've created a sublabel that applies encryption and content markings to HR documents. This label helps ensure HR data is only accessible to authenticated users and can be identified by visual markings.
 
-## Task 4 – Publish sensitivity labels
+## Task 4 – Publish labels
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
@@ -138,9 +142,11 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. The publish sensitivity labels configuration will start.
 
-1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
+1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish (1)** link.
 
-1. On the **Sensitivity labels to publish** flyout panel, select the **Internal** and **Internal/Employee data (HR)** checkboxes, then select **Add** at the bottom of the flyout page.
+1. On the **Sensitivity labels to publish** flyout panel, select the **Internal** and **Internal/Employee data (HR) (2)** checkboxes, then select **Add (3)** at the bottom of the flyout page.
+
+    ![](../Media/lab3-11-3.png)
 
 1. Back on the **Choose sensitivity labels to publish** page, select **Next**.
 
@@ -221,9 +227,13 @@ In this task, you'll create a sensitivity label for financial data and configure
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. On the **Your sensitivity label was created** page, select **Automatically apply label to sensitive content**, then select **Done**.
+1. On the **Your sensitivity label was created** page, select **Automatically apply label to sensitive content (1)**, then select **Done (2)**.
+
+    ![](../Media/lab3-11-4.png)
 
 1. On the **Create auto-labeling policy** flyout page, select **Review policy**.
+
+    ![](../Media/lab3-11-6.png)
 
 1. On the **Name your auto-labeling policy** page, leave the default, then select **Next**.
 
@@ -245,13 +255,21 @@ In this task, you'll create a sensitivity label for financial data and configure
 
 1. On the **Additional settings for email** page, select **Next**.
 
-1. On the **Decide if you want to test out the policy now or later** page, select **Run policy in simulation mode**, and select the checkbox for **Automatically turn on policy if not modified after 7 days in simulation.**
+1. On the **Decide if you want to test out the policy now or later** page, select **Run policy in simulation mode (1)**, and select the checkbox for **Automatically turn on policy if not modified after 7 days in simulation. (2)**
 
-1. Select **Next**.
+1. Select **Next (3)**.
+
+    ![](../Media/lab3-11-5.png)
 
 1. On the **Review and finish** page, select **Create policy**.
 
+    ![](../Media/lab3-11-7.png)
+
+    > **Note:** Please anticipate a delay of two to three hours for the allocation of the required permissions to the user. This process necessitates time and effort before we can proceed with the following task.
+
 1. On the **Your auto-labeling policy was created** page, select **Done**.
+
+    ![](../Media/lab3-11-8.png)
 
 You have successfully created a sensitivity label for financial data and configured an auto-labeling policy to detect and label content that contains sensitive financial information.
 
@@ -269,10 +287,10 @@ In this task, you'll create a sublabel under the Internal label. This sublabel w
 
    |Details|Text|
    |---|---|
-   |**Name**|`Highly Confidential - Legal`|
-   |**Display name**|`Highly Confidential - Legal`|
-   |**Description for users**|`Use this label for highly sensitive content that must be encrypted using Double Key Encryption.`|
-   |**Description for admins**|`Label configured with DKE and dynamic watermarking for highly sensitive content.`|
+   |**Name**|`Confidential Legal`|
+   |**Display name**|`Confidential Legal`|
+   |**Description for users**|`Use this label for highly sensitive legal content that must be encrypted using Double Key Encryption.`|
+   |**Description for admins**|`Label configured with DKE and dynamic watermarking for highly sensitive legal content.`|
 
 1. Select **Next**.
 
@@ -314,11 +332,17 @@ In this task, you'll create a sublabel under the Internal label. This sublabel w
 
 1. On the **Review your settings and finish** page, select **Create label**.
 
-1. On the **Your sensitivity label was created** page, select **Publish label to users' apps**, then select **Done**.
+1. On the **Your sensitivity label was created** page, select **Publish label to users' apps (1)**, then select **Done (1)**.
+
+    ![](../Media/lab3-11-9.png)
 
 1. On the **Publish label** flyout page, select **Create new label policy**.
 
-1. On the **Choose sensitivity labels to publish** page, select **Choose sensitivity labels to publish** and add the **Highly Confidential** label and **Highly Confidential - Legal** sublabel, then select **Add**.
+    ![](../Media/lab3-11-10.png)
+
+1. On the **Choose sensitivity labels to publish** page, select **Choose sensitivity labels to publish (1)** and add the **Internal/Confidential Legal (2)** label, then select **Add (3)**.
+
+    ![](../Media/lab3-11-11.png)
 
 1. Select **Next**.
 
@@ -338,13 +362,17 @@ In this task, you'll create a sublabel under the Internal label. This sublabel w
 
 1. On the **Name your policy** page, enter:
 
-   - **Name**: `Highly Confidential - Legal`
+   - **Name**: `Confidential Legal` **(1)**
 
-   - **Description**: `Enables manual use of the DKE label for highly confidential content accessible by Legal.`
+   - **Description**: `Enables manual use of the DKE label for confidential content accessible by Legal.` **(2)**
 
-1. Select **Next**.
+1. Select **Next (3)**.
+
+    ![](../Media/lab3-11-12.png)
 
 1. On the **Review and finish** page, select **Submit**.
+
+    ![](../Media/lab3-11-13.png)
 
 1. On the **New policy created** page, select **Done**.
 
@@ -357,7 +385,9 @@ In this task, you'll enable Microsoft Purview integration in Microsoft Defender 
 
 1. Open **Microsoft Edge**, then go to **Microsoft Defender** by navigating to `https://security.microsoft.com`.
 
-1. In the left navigation, select **Settings**, then select **Cloud Apps**.
+1. In the left navigation, select **Settings (1)**, then select **Cloud Apps (2)**.
+
+    ![](../Media/lab3-11-14.png)
 
 1. Under the **Information Protection** section in the left pane, select **Microsoft Information Protection**.
 
@@ -375,11 +405,13 @@ In this task, you'll enable Microsoft Purview integration in Microsoft Defender 
 
 1. Select **Save** to apply the settings.
 
-1. Under the **Information Protection** section in the left pane, select **Files**.
+1. Under the **Information Protection** section in the left pane, select **Files (1)**.
 
-1. On the **Files** page, select **Enable file monitoring**.
+1. On the **Files** page, select **Enable file monitoring (2)**.
 
-1. Select **Save** to apply the settings.
+1. Select **Save (3)** to apply the settings.
+
+    ![](../Media/lab3-11-15.png)
 
 You've enabled Defender for Cloud Apps to scan files for sensitivity labels and monitor files so that file policies can evaluate and apply governance actions.
 

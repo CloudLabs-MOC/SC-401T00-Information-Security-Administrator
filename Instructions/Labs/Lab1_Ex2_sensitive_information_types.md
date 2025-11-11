@@ -23,32 +23,44 @@ In this task, you'll create a new custom sensitive information type that recogni
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
    - **Password:** **<inject key="User 01 Password"></inject>**
 
-1. On the left sidebar, select **Solutions** then select **Information Protection**.
+1. On the left sidebar, select **Solutions (1)** then select **Information Protection (2)**.
 
-1. On the left sidebar, expand **Classifiers** then select **Sensitive info types**.
+     ![](../Media/lab2-11-1.png)
 
-1. On the **Sensitive info types** page, select **+ Create sensitive info type** to start the sensitive information type configuration.
+1. On the left sidebar, expand **Classifiers (1)** then select **Sensitive info types (2)**.
+
+1. On the **Sensitive info types** page, select **+ Create sensitive info type (3)** to start the sensitive information type configuration.
+
+      ![](../Media/lab2-11-2.png)
 
 1. On the **Name your sensitive info type** page, enter:
 
-    - **Name**: `Contoso Employee IDs`
-    - **Description**: `Pattern for Contoso employee IDs.`
+    - **Name**: `Contoso Employee IDs` **(1)**
+    - **Description**: `Pattern for Contoso employee IDs.` **(2)**
 
-1. Select **Next**.
+1. Select **Next (3)**.
 
-1. On the **Define patterns for this sensitive info type** page, select **Create pattern**.
+     ![](../Media/lab2-11-3.png)
 
-1. On the **New pattern** flyout panel on the right, select **+ Add primary element** > **Regular expression**.
+1. On the **Define patterns for this sensitive info type** page, select **Create pattern (1)**.
+
+1. On the **New pattern** flyout panel on the right, select **+ Add primary element (2)** > **Regular expression (3)**.
+
+     ![](../Media/lab2-11-4.png)
 
 1. On the **+ Add a regular expression​** flyout panel on the right, enter:
 
-   - **ID**: `Contoso IDs`
-   - **Regular expression**: `[A-Z]{3}[0-9]{6}`
-   - Select the radio button for _String match_.
+   - **ID**: `Contoso IDs` **(1)**
+   - **Regular expression**: `[A-Z]{3}[0-9]{6}` **(2)**
+   - Select the radio button for _String match_. **(3)**
 
-1. Select **Done** at the bottom of the flyout panel.
+1. Select **Done (4)** at the bottom of the flyout panel.
 
-1. Back on the **New pattern** flyout panel, under **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
+     ![](../Media/lab2-11-5.png)
+
+1. Back on the **New pattern** flyout panel, under **Supporting elements**, select **+ Add supporting elements or group of elements (1)** drop-down menu and select **Keyword list (2)**.
+
+     ![](../Media/lab2-11-6.png)
 
 1. On the **Add a keyword list** flyout panel on the right, enter:
 
@@ -64,15 +76,19 @@ In this task, you'll create a new custom sensitive information type that recogni
 
 1. Select **Done** at the bottom of the flyout panel.
 
-1. Back on the **New pattern** flyout panel, under **Character proximity**, decrease the **Detect primary AND supporting elements** value to `100` characters.
+1. Back on the **New pattern** flyout panel, under **Character proximity**, decrease the **Detect primary AND supporting elements** value to `100` **(1)** characters.
 
-1. Select the **Create** button at the bottom of the flyout panel.
+1. Select the **Create (2)** button at the bottom of the flyout panel.
+
+     ![](../Media/lab2-11-7.png)
 
 1. Back on the **Define patterns for this sensitive info type** page select **Next**.
 
 1. On the **Choose the recommended confidence level to show in compliance policies** page use the default value and select **Next**.
 
 1. On the **Review settings and finish** page review the settings and select **Create**. When successfully created select **Done**.
+
+     ![](../Media/lab2-11-8.png)
 
 You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
 
@@ -88,15 +104,21 @@ You've received reports that some documents containing employee IDs aren't being
 
 1. Select **Edit** at the top of the page to modify the SIT.
 
+     ![](../Media/lab2-11-9.png)
+
 1. On the **Name your sensitive info type** page, select **Next**.
 
-1. On the **Define patterns for this sensitive info type** page, expand **Pattern #1** and review the settings.
+1. On the **Define patterns for this sensitive info type** page, expand **Pattern #1 (1)** and review the settings.
 
-1. Select the pencil icon on the right to edit the pattern.
+1. Select the **pencil icon (2)** on the right to edit the pattern.
 
-1. In the **Edit pattern** flyout, set the **Confidence level** dropdown to **Medium confidence**, which allows matches with less supporting evidence than high confidence.
+     ![](../Media/lab2-11-10.png)
 
-1. Select **Update** at the bottom of the flyout.
+1. In the **Edit pattern** flyout, set the **Confidence level** dropdown to **Medium confidence (1)**, which allows matches with less supporting evidence than high confidence.
+
+1. Select **Update (2)** at the bottom of the flyout.
+
+      ![](../Media/lab2-11-11.png)
 
 1. Select **Next** until you reach the **Review settings and finish** page.
 
@@ -125,10 +147,12 @@ In this task, you'll create the role group to create an EDM classifier and add J
 
 1. On the **Set up the basics** screen, enter:
 
-    - **Name**: `EDM_DataUploaders`
-    - **Description**: `People who upload data for EDM.`
+    - **Name**: `EDM_DataUploaders` **(1)**
+    - **Description**: `People who upload data for EDM.` **(2)**
 
-1. Select **Next**.
+1. Select **Next (3)**.
+
+     ![](../Media/lab2-11-12.png)
 
 1. On the **Edit settings** page, leave the default settings, then select **Next**.
 
@@ -136,11 +160,13 @@ In this task, you'll create the role group to create an EDM classifier and add J
 
 1. On the **EDM_DataUploaders group created** page, select **Close**.
 
-1. Back on the **Active teams and groups** page, ensure the **Security** tab is selected from the top navigation ribbon, then select the **Refresh** button to display the newly created security group. Select the **EDM_DataUploaders** group from the list to open the **EDM_DataUploaders** flyout panel on the right.
+1. Back on the **Active teams and groups** page, ensure the **Security** tab is selected from the top navigation ribbon, then select the **Refresh** button to display the newly created security group. Select the **EDM_DataUploaders (1)** group from the list to open the **EDM_DataUploaders** flyout panel on the right.
 
-1. Select the **Members** tab then select **View all and manage members**.
+1. Select the **Members** tab then select **View all and manage members (2)**.
 
-1. On the **Members** page select **+ Add members**.
+1. On the **Members** page select **+ Add members (3)**.
+
+     ![](../Media/lab2-11-13.png)
 
 1. On the **Add members** page, select the checkbox to the left of **Joni Sherman**, then select the **Add (1)** button at the bottom of the flyout panel.
 
@@ -171,18 +197,22 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
 
 1. Navigate to **Information Protection** by selecting **Solutions** > **Information Protection** from the left sidebar.
 
-1. On the **Information Protection** page, expand **Classifiers** then select **EDM classifiers**.
+1. On the **Information Protection** page, expand **Classifiers (1)** then select **EDM classifiers (2)**.
 
-1. On the **EDM classifiers** page, select **+ Create EDM classifier**.
+1. On the **EDM classifiers** page, select **+ Create EDM classifier (3)**.
+
+     ![](../Media/lab2-11-14.png)
 
 1. Review the **Familiarize yourself with the steps needed to put your classifier to work** to understand the workflow for creating EDM classifiers, then select **Create EDM classifier**.
 
 1. On the **Name and describe your EDM classifier** page, enter:
 
-    - **Name**: `employeedb`
-    - **Description**: `Employee Database schema`
+    - **Name**: `employeedb` **(1)**
+    - **Description**: `Employee Database schema` **(2)**
 
-1. Select **Next**.
+1. Select **Next (3)**.
+
+     ![](../Media/lab2-11-15.png)
 
 1. On the **Choose a method for defining your schema** page, select **Manually define your data structure**, then select **Next**.
 
@@ -203,9 +233,11 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
 
       ![Screenshot showing the click path to add a SIT for a primary element in an EDM classifier.](../Media/match-mode-sensitive-info-type.png)
 
-1. On the **Choose a sensitive info type for "EmployeeID"** flyout panel on the right, in the search bar, search for `Contoso`.
+1. On the **Choose a sensitive info type for "EmployeeID"** flyout panel on the right, in the search bar, search for `Contoso` **(1)**.
 
-1. The **Contoso Employee IDs** sensitive info type created in a previous task should be displayed. Select the checkbox to the left of this sensitive info type, then select **Save**.
+1. The **Contoso Employee IDs** sensitive info type created in a previous task should be displayed. Select the checkbox to the left of this sensitive info type **(2)**, then select **Save (3)**.
+
+     ![](../Media/lab2-11-16.png)
 
 1. Back on the **Select primary elements** page, select the checkbox to the right of **EmployeeID** to identify this field as a **Primary element**.
 
@@ -213,11 +245,11 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
 
 1. Select **Next**.
 
-1. On the **Configure settings for data in selected columns**, ensure the toggle is set to **Yes** for **Use the same settings for all columns**.
+1. On the **Configure settings for data in selected columns**, ensure the toggle is set to **Yes (1)** for **Use the same settings for all columns**.
 
-1. Select the checkbox for **Ignore delimiters and punctuation for data in all columns**.
+1. Select the checkbox for **Ignore delimiters and punctuation for data in all columns (2)**.
 
-1. Select the dropdown for **Choose delimiters and punctuation to ignore** dropdown and select:
+1. Select the dropdown for **Choose delimiters and punctuation to ignore (3)** dropdown and select:
 
    - _Hyphen ('-')_
    - _Period ('.')_
@@ -225,7 +257,9 @@ In this task, you'll create an Exact Data Match (EDM) based classification with 
    - _Open parenthesis ('(')_
    - _Close parenthesis (')')_
 
-1. Click anywhere outside of the dropdown, then select **Next**.
+1. Click anywhere outside of the dropdown, then select **Next (4)**.
+
+     ![](../Media/lab2-11-17.png)
 
 1. On the **Configure detection rules for primary elements**, leave the default configuration, then select **Next**.
 
@@ -251,11 +285,17 @@ In this task, you'll hash and upload the actual data for the EDM-based classific
 
 1. On the **Welcome to the Microsoft Exact Data Match Upload Agent Setup Wizard** page, select **Next**.
 
-1. On the **End-User License Agreement** page, select the **I accept the terms in the License Agreement** checkbox, then select **Next**.
+     ![](../Media/lab2-11-18.png)
+
+1. On the **End-User License Agreement** page, select the **I accept the terms in the License Agreement (1)** checkbox, then select **Next (2)**.
+
+     ![](../Media/lab2-11-19.png)
 
 1. On the **Destination Folder** page, don't change the default destination path, then select **Next**.
 
 1. On the **Ready to install Microsoft Exact Data Match Upload Agent** page, select **Install**.
+
+     ![](../Media/lab2-11-20.png)
 
 1. If the **User Account Control** window pops up, select **Yes** to allow this application to make changes to your device.
 
@@ -348,10 +388,12 @@ Several violations of personal information leakage happened when users sent out 
 
 1. On the **Name your sensitive info type** page, enter:
 
-    - **Name**: `Contoso Diseases List`
-    - **Description**: `List of possible diseases of employees.`
+    - **Name**: `Contoso Diseases List` **(1)**
+    - **Description**: `List of possible diseases of employees.` **(2)**
 
-1. Select **Next**.
+1. Select **Next (3)**.
+
+     ![](../Media/lab2-11-22.png)
 
 1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
@@ -376,8 +418,8 @@ Several violations of personal information leakage happened when users sent out 
 
 1. On the **Add a keyword list** page enter:
 
-   - **ID**: `Employee absence`
-   - **Case insensitive**:
+   - **ID**: `Employee absence` **(1)**
+   - **Case insensitive (2)**:
 
     ``` text
     employee
@@ -385,7 +427,9 @@ Several violations of personal information leakage happened when users sent out 
     reason
     ```
 
-1. Select **Done** at the bottom of the flyout panel.
+1. Select **Done (3)** at the bottom of the flyout panel.
+
+     ![](../Media/lab2-11-24.png)
 
 1. Back on the **New pattern** page, review the configuration and select **Create**.
 
@@ -419,15 +463,23 @@ Always test custom sensitive information types before using them in policies. Ot
 
 1. Back in **Microsoft Edge**, Microsoft Purview portal should still be open on the **Sensitive info types** page.
 
-1. In the **Search** bar on the upper right, enter `Contoso` and press Enter.
+1. In the **Search** bar on the upper right, enter `Contoso` **(1)** and press Enter.
 
-1. Select **Contoso Employee IDs**.
+1. Select **Contoso Employee IDs (2)**.
+
+     ![](../Media/lab2-11-25.png)
 
 1. Select **Test**.
 
+      ![](../Media/lab2-11-26.png)
+
 1. On the **Upload file to test "Contoso Employee IDs"** flyout panel on the right, select **Upload file**.
 
-1. Select **Documents** from the left pane, select the _SickTestData.txt_ file, then select **Open**.
+      ![](../Media/lab2-11-27.png)
+
+1. Select **Documents (1)** from the left pane, select the _SickTestData.txt_ **(2)** file, then select **Open (3)**.
+
+      ![](../Media/lab2-11-28.png)
 
 1. Select **Test** to start the analysis.
 

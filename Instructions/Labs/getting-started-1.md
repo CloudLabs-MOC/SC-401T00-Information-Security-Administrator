@@ -59,33 +59,33 @@ Welcome to your SC-401: Information Security Administrator Workshop! We've prepa
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-1.png)
+  ![Screenshot of the Add a group button.](../Media/g-11-1.png)
  
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-2.png)
+  ![Screenshot of the Add a group button.](../Media/g-11-2.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-5.png)
+  ![Screenshot of the Add a group button.](../Media/g-11-3.png)
 
 ## Utilizing the Zoom In/Out Feature
 
 To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
 
-  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-4.png)
+  ![Screenshot of the Add a group button.](../Media/g-11-4.png)
 
 ## Managing Your Virtual Machine
  
-Feel free to **Start, Restart,** or **Stop** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Restart,** or **Stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-3.png)
+  ![Screenshot of the Add a group button.](../Media/g-11-5.png)
 
 ## Support Contact
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
