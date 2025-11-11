@@ -512,3 +512,7 @@ In this lab, you have completed the following tasks:
 - Created EDM-based classification data source
 - Created keyword dictionary
 - Tested custom sensitive information types
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-6.png)

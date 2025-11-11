@@ -8,7 +8,7 @@ In this lab, you will perform the following:
 
 - Task 01: Create a mail flow rule to encrypt messages from the Finance department
 - Task 02: Add a disclaimer to encrypted messages
-- Task 03: Enable the mail flow rule  behavior
+- Task 03: Enable the mail flow rule
 - Task 04: Validate message encryption
 
 ## Task 1 – Create a mail flow rule to encrypt messages from the Finance department
