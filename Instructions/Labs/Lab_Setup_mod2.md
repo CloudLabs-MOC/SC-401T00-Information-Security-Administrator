@@ -25,7 +25,9 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
     ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/welcome-purview-portal.png)
 
-1. Select **Solutions** from the left sidebar, then select **Audit**.
+1. Select **Solutions (1)** from the left sidebar, then select **Audit (2)**.
+
+    ![](../Media/lab1-11-1.png)
 
 1. On the **Search** page, select the **Start recording user and admin activity** bar to enable audit logging.
 
@@ -95,11 +97,13 @@ You have successfully enabled auditing in Microsoft 365.
 
 In this task, you'll enable device onboarding for your organization.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** to log into Microsoft Purview, then select **Settings** from the left sidebar.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** to log into Microsoft Purview, then select **Settings (1)** from the left sidebar.
 
-1. In the left sidebar, expand **Device onboarding** then select **Devices**.
+1. In the left sidebar, expand **Device onboarding (2)** then select **Devices (3)**.
 
-1. On the **Devices** page, select **Turn on device onboarding** then select **Ok** to enable device onboarding.
+1. On the **Devices** page, select **Turn on device onboarding (4)** then select **Ok** to enable device onboarding.
+
+     ![](../Media/lab1-11-2.png)
 
 1. When prompted, select **OK** to confirm that device monitoring is being turned on.
 
@@ -109,21 +113,25 @@ You have now enabled device onboarding and can start to onboard devices to be pr
 
 In this task, you'll enable analytics and data sharing for Insider Risk Management.
 
-1. In Microsoft Purview, navigate to **Settings** > **Insider Risk Management** > **Analytics**.
+1. In Microsoft Purview, navigate to **Settings (1)** > **Insider Risk Management (2)** > **Analytics (3)**.
 
-1. Toggle these settings to **On**:
+1. Toggle these settings to **On (4)**:
 
    - **Show insights at tenant level**
 
    - **Show insights at user level**
 
-1. Select **Save** at the bottom of the page.
+1. Select **Save (5)** at the bottom of the page.
 
-1. Select **Data sharing** on the left navigation pane.
+     ![](../Media/lab1-11-3.png)
 
-1. In the Data sharing section, toggle **Share user risk details with other security solutions** to **On**.
+1. Select **Data sharing (1)** on the left navigation pane.
 
-1. Select **Save** at the bottom of the page.
+1. In the Data sharing section, toggle **Share user risk details with other security solutions** to **On (2)**.
+
+1. Select **Save (3)** at the bottom of the page.
+
+     ![](../Media/lab1-11-4.png)
 
 You have enabled analytics and data sharing for Insider Risk Management.
 
@@ -164,7 +172,7 @@ In this task, you will create a new Microsoft 365 (M365) group and ensure it is 
       | Group type | **Microsoft 365 (1)** |
       | Group name | **Finance team (2)** |
 
-   ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/mod6-ex1-021.png)
+      ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/mod6-ex1-021.png)
 
 1. Scroll down, select **No members selected (1)**, then choose **Debra Berger (2)**, **Lynne Robbins (2)** and **Megan Bowen (2)**, **ODL_User <inject key="DeploymentID" enableCopy="false" /></inject>(2)**. Choose **Select (3)** option.
 
@@ -174,4 +182,34 @@ In this task, you will create a new Microsoft 365 (M365) group and ensure it is 
 
    ![Screenshot showing Microsoft Defender XDR being onboarded.](../Media/sc401-labsetup-2.png)
 
+1. Similarly, create another group named **Legal Team**.
+
+1. On the **Groups | Overview** page, select **+ New group** again.
+
+1. On the **New Group** blade, configure the following settings and leave the rest as default:
+
+    | Setting | Value |
+    | --- | --- |
+    | Group type | **Microsoft 365 (1)** |
+    | Group name | **Legal Team (2)** |
+
+     ![](../Media/lab1-11-8.png)
+
+1. Scroll down and select **No members selected (1)**. In the **Add members** flyout, select the following users **(2)**:  
+    - **Debra Berger**   
+    - **Lynne Robbins** 
+    - **ODL_User <inject key="DeploymentID" enableCopy="false" /></inject>** 
+
+    After selecting, click **Select (3)**.
+
+    ![](../Media/lab1-11-9.png)
+
+1. Verify the selected members appear under the **Members** section as shown below, then click **Create** to provision the **Legal Team** group.
+
+     ![](../Media/lab1-11-7.png)
+
 You have now set up your environment and are ready to begin administration.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-6.png)
