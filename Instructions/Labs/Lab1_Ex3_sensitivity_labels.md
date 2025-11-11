@@ -132,7 +132,7 @@ Now that you have a base label, you'll create a sublabel for HR-related document
 
 You've created a sublabel that applies encryption and content markings to HR documents. This label helps ensure HR data is only accessible to authenticated users and can be identified by visual markings.
 
-## Task 4 – Publish labels
+## Task 4 – Publish sensitivity labels
 
 You will now publish the Internal and HR sensitivity label so that the published sensitivity labels will be available for the HR users to apply to their HR documents.
 
@@ -265,7 +265,7 @@ In this task, you'll create a sensitivity label for financial data and configure
 
     ![](../Media/lab3-11-7.png)
 
-    > **Note:** Please anticipate a delay of two to three hours for the allocation of the required permissions to the user. This process necessitates time and effort before we can proceed with the following task.
+    > **Note:**    If the error `Microsoft.Exchange.Management.UnifiedPolicy.UnifiedAuditLogDisabledException` appears, the **Audit log search** is still activating. Please wait **30–60 minutes** and retry creating the policy. 
 
 1. On the **Your auto-labeling policy was created** page, select **Done**.
 
@@ -426,3 +426,7 @@ In this lab, you have completed the following tasks:
 - Configure auto labeling
 - Create and publish a DKE label for highly confidential content
 - Enable Microsoft Purview integration in Defender for Cloud Apps
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+  ![Screenshot of the Add a group button.](../Media/getting-started-mod1-6.png)
