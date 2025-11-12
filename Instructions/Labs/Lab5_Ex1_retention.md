@@ -21,9 +21,11 @@ In this task, you'll create a retention label for sensitive financial data that 
       - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
       - **Password:** **<inject key="User 01 Password"></inject>**
 
-1. Navigate to **Solutions** > **Data Lifecycle Management** > **Retention labels**.
+1. Navigate to **Solutions (1)** > **Data Lifecycle Management (2)** > **Retention labels (3)**.
 
-1. On the **Labels** page, select **Create a label**.
+   - On the **Labels** page, select **Create a label (4)**.
+
+     ![](../Media/s47.png)
 
 1. On the **Name your retention label** page, enter:
 
@@ -38,7 +40,7 @@ In this task, you'll create a retention label for sensitive financial data that 
 1. On the **Define the period** page, ensure these values are set for the retention period configuration input:
 
     - **How long is the period?**: 5 Years
-    - **When should the period begin?**: When items were last modified
+    - **Start the retention period based on**: When items were last modified
 
 1. Select **Next**.
 
@@ -46,7 +48,10 @@ In this task, you'll create a retention label for sensitive financial data that 
 
 1. On the **Review and finish** page, select **Create label**.
 
-1. On the **Your retention label is created** page, select the option to **Do nothing**, then select **Done**.
+1. On the **Your retention label is created** page,
+
+   - Select the option to **Do nothing**
+   - Then select **Done**.
 
 You've created a retention label that retains financial content for five years and deletes it afterward to reduce data exposure.
 
@@ -56,20 +61,26 @@ In this task, you'll publish the retention label so users can apply it in Micros
 
 1. In Microsoft Purview, navigate to **Solutions** > **Data Lifecycle Management** > **Retention labels**.
 
-1. Select the checkbox next to the **Sensitive Financial Records** label, then select the **Publish labels** icon (![Publish labels icon](../Media/publish-labels-icon.png)) to publish this retention label.
+1. Select the checkbox next to the **Sensitive Financial Records (1)** label, then select the **Publish labels** icon (![Publish labels icon](../Media/publish-labels-icon.png)) **(2)** to publish this retention label.
 
-1. On the **Choose labels to publish** page, verify the **Sensitive Financial Records** label is selected, then select **Next**.
+    ![](../Media/s48.png)
+
+1. On the **Choose labels to publish** page,
+
+   - Verify the **Sensitive Financial Records** label is selected, then select **Next**.
 
 1. On the **Policy Scope** page select **Next**.
 
-1. On the **Choose the type of retention policy to create** page select **Static** then select **Next**.
+1. On the **Choose the type of retention policy to create** page,
+
+   - Select **Static** and then select **Next**.
 
 1. On the **Choose where to publish labels** page select **Let me choose specific locations** and select:
 
     - Exchange mailboxes
     - SharePoint classic and communication sites
     - OneDrive accounts
-    - Deselect all other locations
+    - **Deselect all other locations**
 
 1. Select **Next**.
 
@@ -101,35 +112,36 @@ In this task, you'll create a retention label for personal financial data that n
 
 4. On the **Name your retention label** page, enter the following:
 
-- **Name**: `Personal Financial PII`  
-- **Description for users**: `Use for documents or emails that contain personal financial data like bank account or credit card numbers.`  
-- **Description for admins**: `Retains sensitive personal financial information for 3 years to support compliance with privacy regulations and investigations.`
+   - **Name**: `Personal Financial PII`  
+   - **Description for users**: `Use for documents or emails that contain personal financial data like bank account or credit card numbers.`  
+   - **Description for admins**: `Retains sensitive personal financial information for 3 years to support compliance with privacy regulations and investigations.`
 
 5. Select **Next**.
 
 6. On the **Define label settings** page, select:  
-- **Retain items forever or for a specific period**
+
+   - **Retain items forever or for a specific period**
 
 7. Then select **Next**.
 
 8. On the **Define the period** page, configure the following:
 
-- **How long is the period?**: `5 Years`  
-- **When should the period begin?**: `When items were created`
+   - **How long is the period?**: `5 Years`  
+   - **Start the retention period based on**: `When items were created`
 
 9. Select **Next**.
 
 10. On the **Choose what happens after the retention period** page, select:  
- - **Delete items automatically**
 
- Then select **Next**.
+    - **Delete items automatically**
+
+    - Then select **Next**.
 
 11. On the **Review and finish** page, review the configuration and select **Create label**.
 
 12. On the **Your retention label is created** page, select the option to:  
- - **Do nothing**
 
- Then select **Done**.
+    - **Do nothing** and then select **Done**.
 
 
 ✅ You've created a retention label named **Personal Financial PII** that retains sensitive personal financial content for **three years** and **deletes it automatically** afterward to reduce risk and comply with regulatory requirements.
@@ -150,9 +162,14 @@ In this task, you'll configure a policy that automatically applies a retention l
 
 1. Select **Next**.
 
-1. On the **Choose the type of content you want to apply this label to** page, select **Apply label to content that contains sensitive info**, then select **Next**.
+1. On the **Choose the type of content you want to apply this label to** page,
 
-1. On the **Content that contains sensitive info** page, select the **Financial** category, then select the **U.S. Gramm-Leach-Bliley Act (GLBA)** regulation, then select **Next**.
+   - Select **Apply label to content that contains sensitive info**, then select **Next**.
+
+1. On the **Content that contains sensitive info** page,
+
+   - Select the **Financial** category
+   - Then select the **U.S. Gramm-Leach-Bliley Act (GLBA)** regulation, then select **Next**.
 
 1. On the **Define content that contains sensitive info** page, select **Next**.
 
@@ -165,7 +182,7 @@ In this task, you'll configure a policy that automatically applies a retention l
     - Exchange mailboxes
     - SharePoint classic and communication sites
     - OneDrive accounts
-    - Deselect all other locations
+    - **Deselect all other locations**
 
 1. On the **Choose a label to auto-apply** page, select **Add label**.
 
@@ -173,9 +190,13 @@ In this task, you'll configure a policy that automatically applies a retention l
 
 1. Back on the **Choose a label to auto-apply** page, select **Next**.
 
-1. On the **Decide whether to test or run your policy**, select **Test the policy before running it**, then select **Next**.
+1. On the **Decide whether to test or run your policy**,
 
-1. On the **Review and finish** page, select **Submit**, then select **Done** on the **Your auto-labeling policy has been created** page.
+   - Select **Test the policy before running it**, then select **Next**.
+
+1. On the **Review and finish** page, select **Submit**.
+
+1. Then select **Done** on the **Your auto-labeling policy has been created** page.
 
 You've created an auto-apply policy that identifies personal financial data and applies a retention label automatically.
 
@@ -353,7 +374,9 @@ In this task, you'll simulate restoring a deleted document from a SharePoint sit
 
    ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-11.png)
 
-1. Navigate back to the **Documents** page, select the checkbox for **Vacation Policies.pptx (1)** then select **Delete (2)** from the action bar.
+1. Close the Powerpoint presentation.   
+
+1. Navigate back to the **Documents** page, refresh the page. Select the checkbox for **Vacation Policies.pptx (1)** then select **Delete (2)** from the action bar.
 
    ![Screenshot showing where there ellipses is to display the action menu.](../Media/mod5-ex1-task5-4.png)
 
