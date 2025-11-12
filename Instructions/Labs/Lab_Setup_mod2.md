@@ -147,7 +147,7 @@ In this task, you'll open Microsoft Defender and wait for Microsoft Defender XDR
 
 1. In **Microsoft Edge**, navigate to **`https://security.microsoft.com/`** to open Microsoft Defender.
 
-1. From the navigation pane, select **Investigation & response** > **Incidents & alerts** > **Incidents**.
+1. From the navigation pane, select **Incidents & alerts** > **Incidents**.
 
     > **Note**: The Microsoft Defender XDR initialization screen might or might not appear depending on your lab tenant. If it appears, you can continue with other tasks while it completes in the background.
 
