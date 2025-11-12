@@ -105,9 +105,11 @@ In this task, you'll enable device onboarding for your organization.
 
     - In the left sidebar, expand **Device onboarding (2)** then select **Devices (3)**.
 
-    - On the **Devices** page, select **Turn on device onboarding (4)** then select **Ok** to enable device onboarding.
+    - On the **Devices** page, select **Turn on device onboarding (4)**.
 
       ![](../Media/lab1-11-2.png)
+
+1. Then select **OK** to enable device onboarding.      
 
 1. When prompted, select **OK** to confirm that device monitoring is being turned on.
 
