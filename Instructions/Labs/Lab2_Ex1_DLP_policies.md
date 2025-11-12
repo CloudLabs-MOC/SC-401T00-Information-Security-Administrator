@@ -356,6 +356,8 @@ Some file policies require access to inspect the contents of protected files. In
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-2.png)
 
+1. Choose the **<inject key="AzureAdUserEmail" enableCopy="false"/>** account.    
+
 1. Follow the prompt to allow the required permissions in Microsoft Entra ID by chossing **Accept**, then you should see file inspection is **Active** in Microsoft Defender for Cloud Apps.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-task6-3.png)
