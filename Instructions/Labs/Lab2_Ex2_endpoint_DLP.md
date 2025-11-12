@@ -89,16 +89,22 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-11.png)
 
-1. In the **Access work or school** window for **Add a work or school account** select **Connect**.
+1. In the **Access work or school** window for **Add a work or school account** select **+ Connect**.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-12.png)
+    ![](../Media/s22.png)
 
-1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link and Sign in as Joni Sherman using below credentials:
+1. In the **Set up a work or school account** dialog, select the **Join this device to Microsoft Entra ID** link.
+
+    ![](../Media/s23.png)
+
+1. Sign in as **Joni Sherman** using below credentials:
 
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
    - **Password:** **<inject key="User 01 Password"></inject>**
 
-        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-13.png)
+1. Select **Join**.
+
+    ![](../Media/s24.png)
 
 1. You will see a screen indicating that the device is being registered with the company policy. Wait a few moments for the process to complete. Once your device has connected select **Done** on the **You're all set!** screen.
 
@@ -108,9 +114,20 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
 1. Restart **Client VM (clientvm-<inject key="DeploymentID" enableCopy="false" /></inject>)** and close the session.
 
-1. You will be back into **LabVM**, signed in as demouser.
+    - Select **Start** button **(1)**
+    - Click **Power** button **(2)**
+    - Select **Restart (3)**
 
-1. The Microsoft Purview window should still be open at the **Devices** page. Refresh this page and verify the device has been successfully onboarded.
+      ![](../Media/s25.png)
+
+1. You will be back into **LabVM**.In **Microsoft Edge**, navigate to **Microsoft Purview portal** by going to `https://purview.microsoft.com`. Log in as  Administrator, using below credentials:
+
+    - Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>**
+    - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**
+
+1. Select **Settings (1)** from the left sidebar. On the left sidebar, expand **Device onboarding (2)**, then select **Devices (3)**. Refresh this page and verify the device has been successfully onboarded **(4)**.
+
+    ![](../Media/s26.png)
 
 You've successfully onboarded the device and joined it to Microsoft Entra ID. It can now be protected by endpoint DLP policies.
 
