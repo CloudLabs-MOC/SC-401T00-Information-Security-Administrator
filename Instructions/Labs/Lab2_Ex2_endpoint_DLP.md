@@ -36,10 +36,16 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/sc401-mod2-new-4.png)
 
-1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
+1. Select **Accept** for Choose privacy settings for your device.    
+
+1. Open Microsoft Edge, if prompted select **Continue without data > Confirm and browsing > Start without google data > Confirm**.
+
+1. Navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
 
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**
    - **Password:** **<inject key="User 01 Password"></inject>**
+
+1. Select **Get Started**.   
 
 1. Select **Settings (1)** from the left sidebar. On the left sidebar, expand **Device onboarding (2)**, then select **Onboarding (3)**.
 
