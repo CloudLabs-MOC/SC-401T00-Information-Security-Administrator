@@ -8,8 +8,10 @@ In this lab, you will perform the following:
 
 - Task 01: Use DSPM for AI to create a DLP policy for generative AI sites
 - Task 02: Create an insider risk policy to detect risky AI interactions
+<!------ Commenting out until tenant bug issues are resolved
 - Task 03: Block Copilot from accessing labeled content
-- Task 04: Run a data assessment to detect unlabeled content
+-->
+- Task 03: Run a data assessment to detect unlabeled content
 
 ## Task 1 – Use DSPM for AI to create a DLP policy for generative AI sites
 
@@ -20,25 +22,41 @@ To reduce the risk of data loss through AI assistants, you'll start by creating 
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
    - **Password:** **<inject key="User 01 Password"></inject>**
 
-1. In Microsoft Purview, navigate to DSPM for AI by selecting **Solutions** > **DSPM for AI** > **Recommendations**
+1. In Microsoft Purview, navigate to DSPM for AI by selecting **Solutions (1)** > **DSPM for AI (2)**
 
-1. Select the **Fortify your data security** recommendation.
+   ![](../Media/s49.png)
+
+1. Select **Recommendations (1)** and the select the **Fortify your data security (2)** recommendation.
+
+   ![](../Media/s50.png)
 
 1. In the **Data security for AI** flyout page, review the summary, then select **Create policies**. This creates a preconfigured DLP policy targeting generative AI sites.
 
 1. Once the policy has been created, select **Policies** button.
 
-1. In the **Policy details** section, select **Edit policy in solution** to open the **Data Loss Prevention** solution in Microsoft Purview.
+   ![](../Media/s51.png)
 
-1. On the **Policies** page, locate and select the **DSPM for AI - Block sensitive info from AI sites** policy.
+1. On the **Policies** page, locate and select the **DSPM for AI - Block sensitive info from AI sites (1)** policy.
 
-1. In the flyout, select **View simulation**.
+   - In the **Policy details** section, select **Edit policy in solution (2)** to open the **Data Loss Prevention** solution in Microsoft Purview.
+
+     ![](../Media/s52.png)
+
+1. On the **Policies** page, locate and select the **DSPM for AI - Block sensitive info from AI sites (1)** policy.
+
+   - In the flyout, select **View simulation (2)**.
+
+     ![](../Media/s53.png)   
 
 1. On the simulation dashboard, select **Edit the policy**.
 
-1. Select **Next** until you reach the **Choose where to apply the policy** page. Confirm the policy is scoped to **Devices**.
+1. Select **Next** until you reach the **Choose where to apply the policy** page,
 
-1. Select **Next**.
+   - Confirm the policy is scoped to **Devices (1)**.
+
+   - Select **Next (2)**.
+
+     ![](../Media/s54.png)   
 
 1. On the **Customize advanced DLP rules** page, select the pencil icon next to **Block with override for elevated risk users** to view the rule.
 
@@ -65,20 +83,29 @@ Next, you'll create a policy that helps detect risky prompt behavior in Copilot.
 
 1. Select the **Detect risky interactions in AI apps (preview)** recommendation.
 
+    ![](../Media/s55.png)
+
 1. In the **Detect risky interactions in AI apps (preview)** flyout page, review the summary, then select **Create policy**.
 
 1. Once the policy is created, select **Policies** button.
 
-1. In the **Policy details** section, select **Edit policy in solution** to open the **Insider Risk Management** area of Microsoft Purview.
+1. On the **Policies (1)** page, locate and select the **DSPM for AI - Detect risky AI usage (2)** policy.
 
-1. On the **Policies** page, locate and select the **DSPM for AI - Detect risky AI usage** policy.
+   - In the **Policy details** section, select **Edit policy in solution (3)** to open the **Insider Risk Management** area of Microsoft Purview.
 
-1. In the flyout, select **Edit policy** to review the full policy configuration.
+     ![](../Media/s58.png)   
+
+1. On the **Policies** page, locate and select the **DSPM for AI - Detect risky AI usage (1)** policy.
+
+   - In the flyout, select **Edit policy (2)** to review the full policy configuration.
+
+     ![](../Media/s57.png)   
 
 1. On the **Choose a policy template** page, observe that the policy uses the **Risky AI usage (preview)** template.
 
 1. Select **Next** until you reach the **Choose triggering event for this policy page**.
-Confirm that the triggering event is **User account deleted from Microsoft Entra ID**, which signals potential offboarding-related risks that might precede or follow risky AI activity.
+
+   - Confirm that the triggering event is **User account deleted from Microsoft Entra ID**, which signals potential offboarding-related risks that might precede or follow risky AI activity.
 
 1. Select **Next**.
 
@@ -88,10 +115,13 @@ Confirm that the triggering event is **User account deleted from Microsoft Entra
    - Received sensitive response from Copilot
    - Entered risky prompt in Copilot
 
-1. Select **Next** until you reach the **Review and finish** page, then select **Cancel** to exit the editor without making changes.
+1. Select **Next** until you reach the **Review and finish** page.
+
+1. Then select **Cancel** to exit the editor without making changes.
 
 You've created a policy that detects risky AI interactions, including prompts and responses, to help identify early signs of risky user behavior.
 
+<!------ 
 ## Task 3 – Block Copilot from accessing labeled content
 
 You can further reduce risk by preventing Copilot from processing or responding with content protected by sensitivity labels.
@@ -135,14 +165,19 @@ You can further reduce risk by preventing Copilot from processing or responding 
 1. Select the **Protect sensitive data referenced in Microsoft 365 Copilot and agents (preview)** recommendation and select **Mark as complete**.
 
 You've created a DLP policy that prevents labeled content from being used in Copilot prompts and responses.
+-->
 
-## Task 4 – Run a data risk assessment to detect unlabeled content
+## Task 3 – Run a data risk assessment to detect unlabeled content
 
 To understand potential gaps in labeling coverage, you'll run a data risk assessment to identify files without sensitivity labels that may be accessed by Copilot.
 
-1. In **DSPM for AI**, select the recommendation titled **Protect sensitive data referenced in Copilot and agent responses**.
+1. In Microsoft Purview, navigate to **DSPM for AI** by selecting **Solutions** > **DSPM for AI** > **Recommendations**.
 
-1. In the **Protect sensitive data referenced in Copilot and agent responses** pane, review the summary, then select **Go to assessments**.
+1. Select the **Protect sensitive data referenced in Copilot and agent responses (1)** recommendation.
+
+   - In the **Protect sensitive data referenced in Copilot and agent responses** pane, review the summary, then select **Go to assessments (2)**.
+
+     ![](../Media/s59.png)
 
 1. On the **Data risk assessments** page, select **Create custom assessment**
 
@@ -169,5 +204,7 @@ In this lab, you have completed the following tasks:
 
 - Use DSPM for AI to create a DLP policy for generative AI sites
 - Create an insider risk policy to detect risky AI interactions
+<!------ 
 - Block Copilot from accessing labeled content
+-->
 - Run a data assessment to detect unlabeled content
