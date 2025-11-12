@@ -36,10 +36,16 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/sc401-mod2-new-4.png)
 
-1. Open Microsoft Edge, and navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
+1. Select **Accept** for Choose privacy settings for your device.    
+
+1. Open Microsoft Edge, if prompted select **Continue without data > Confirm and browsing > Start without google data > Confirm**.
+
+1. Navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
 
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**
    - **Password:** **<inject key="User 01 Password"></inject>**
+
+1. Select **Get Started**.   
 
 1. Select **Settings (1)** from the left sidebar. On the left sidebar, expand **Device onboarding (2)**, then select **Onboarding (3)**.
 
@@ -53,9 +59,17 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-3.png)
 
-1. Extract the zip file to the **Desktop** of SC-401-CL2. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
+1. Right click on the zip file and select **Extract all** to extract the file to the **Desktop** of SC-401-CL2. 
 
-1. On the desktop right click the **DeviceComplianceLocalOnboardingScript.cmd** file you just extracted and select **Show more options**, then select **Properties**.
+1. Select **Extract**.
+
+1. You should see a script named **DeviceComplianceLocalOnboardingScript.cmd**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s20.png)
+
+1. On the desktop right click the **DeviceComplianceLocalOnboardingScript.cmd (1)** file you just extracted and then select **Properties (2)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s21.png)
 
 1. Towards the bottom of the **General** tab of the properties window, in the **Security** section, select **Unblock**, then select **OK** to save this setting.
 
