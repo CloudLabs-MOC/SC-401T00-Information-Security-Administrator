@@ -227,8 +227,8 @@ In this task, you'll configure the policy indicators and create a priority user 
 
 1. On the **Policy indicators** page, expand and select **Select all** to enable all indicators in these categories:
 
-   - Microsoft Defender for Endpoint indicators
-   - Risky browsing indicators (preview)
+   - **Microsoft Defender for Endpoint indicators**
+   - **Risky browsing indicators (preview)**
 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-2.png)
 
