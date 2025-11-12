@@ -288,13 +288,15 @@ In this task, you'll install the Microsoft Purview Extension in Google Chrome to
 
 1. Navigate to the Google Chrome download at **`https://chrome.google.com`**.
 
-1. Select **Download Chrome** and select **Open file** from the **Downloads** notification for **ChromeSetup.exe**.
+1. Select **Download Chrome**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-37.png)
 
+1. Select **Open file** from the **Downloads** notification for **ChromeSetup.exe**.
+
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-38.png)
 
-1. Select **Yes** in the **User Account Control** dialog to install the Chrome browser.
+1. If prompted, select **Yes** in the **User Account Control** dialog to install the Chrome browser.
 
 1. When the installation is finished, on the **Sign in to Chrome** screen, select **Don't sign in**.
 
