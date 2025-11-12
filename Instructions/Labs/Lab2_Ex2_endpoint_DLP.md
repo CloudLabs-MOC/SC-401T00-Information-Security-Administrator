@@ -222,8 +222,7 @@ In this task, you'll create a DLP policy that blocks the transfer of sensitive i
    - Also, select the checkbox to **Turn the policy on if it's not edited within fifteen days of simulation (3)**.
    - Select **Next (4)**.
 
-
-        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-25.png)
+     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-25.png)
 
 1. On the **Review and finish** page, review your policy settings then select **Submit** to create the policy.
 
