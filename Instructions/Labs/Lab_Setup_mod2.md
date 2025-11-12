@@ -29,9 +29,13 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
     ![](../Media/lab1-11-1.png)
 
+     >**Note**: If you don’t see **Audit**, click on **Explore All** and select it.
+
 1. On the **Search** page, select the **Start recording user and admin activity** bar to enable audit logging.
 
     ![Screenshot showing the Start recording user and admin activity button.](../Media/enable-audit-button.png)
+
+     >**Note**: If you don’t see the **Start recording user and admin activity** bar, it means it’s already enabled. Please proceed to the next task.
 
 1. Once you select this option, the blue bar should disappear from this page.
 
@@ -99,11 +103,11 @@ In this task, you'll enable device onboarding for your organization.
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** to log into Microsoft Purview, then select **Settings (1)** from the left sidebar.
 
-1. In the left sidebar, expand **Device onboarding (2)** then select **Devices (3)**.
+    - In the left sidebar, expand **Device onboarding (2)** then select **Devices (3)**.
 
-1. On the **Devices** page, select **Turn on device onboarding (4)** then select **Ok** to enable device onboarding.
+    - On the **Devices** page, select **Turn on device onboarding (4)** then select **Ok** to enable device onboarding.
 
-     ![](../Media/lab1-11-2.png)
+      ![](../Media/lab1-11-2.png)
 
 1. When prompted, select **OK** to confirm that device monitoring is being turned on.
 
@@ -121,7 +125,7 @@ In this task, you'll enable analytics and data sharing for Insider Risk Manageme
 
    - **Show insights at user level**
 
-1. Select **Save (5)** at the bottom of the page.
+    - Select **Save (5)** at the bottom of the page.
 
      ![](../Media/lab1-11-3.png)
 
