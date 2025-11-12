@@ -265,7 +265,8 @@ In this task, you'll create a DLP policy using PowerShell to block sharing of em
    - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Then, in the **Automatically sign in to all desktop apps and websites on this device?** tab choose **No, this app only.**
-        ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-30.png)
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-30.png)
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 
