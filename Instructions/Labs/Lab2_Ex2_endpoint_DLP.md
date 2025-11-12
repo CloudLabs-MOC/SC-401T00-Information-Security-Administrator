@@ -336,7 +336,7 @@ Next, you'll send sensitive employee information in an email to verify that your
 
 1. You should still be logged into **LabVM**, signed in as demouser account and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. In Microsoft Edge, select the app launcher in the top left and choose **Outlook**.
+1. In Microsoft Edge, from the purview portal, select the app launcher in the top left **(1)**, then search and select **Outlook (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-048.png)
 
