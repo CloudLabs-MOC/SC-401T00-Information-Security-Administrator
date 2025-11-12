@@ -75,7 +75,9 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-7.png)
 
-1. Back on the desktop, right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**. On the **User Account Control** dialogue, select **Yes**.
+1. Back on the desktop, right click **DeviceComplianceLocalOnboardingScript.cmd**, then select **Run as administrator**.
+
+1. If prompted, on the **User Account Control** dialogue, select **Yes**
 
 1. In the **Command Prompt** screen type **Y** to confirm, and then press **Enter**.
 
