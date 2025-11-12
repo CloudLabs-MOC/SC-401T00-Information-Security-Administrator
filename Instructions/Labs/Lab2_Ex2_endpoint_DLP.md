@@ -344,31 +344,31 @@ Next, you'll send sensitive employee information in an email to verify that your
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-49.png)
 
-1. In the **To** field, enter the below email address.
+1. In the **To** field, enter the below email address **(1)**.
 
     - Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>**
 
-1. In the subject field enter `Help with employee information`.
+    - In the subject field enter `Help with employee information`. **(2)**
 
-1. In the body of the email enter:
+    - In the body of the email enter **(3)**:
 
-   ``` text
-   Please help me with the start dates for the following employees:
-   ABC123456
-   DEF678901
-   GHI234567
+      ``` text
+      Please help me with the start dates for the following employees:
+      ABC123456
+      DEF678901
+      GHI234567
 
-   Thank you, 
-   Joni Sherman
-   ```
+      Thank you, 
+      Joni Sherman
+      ```
 
-1. Select the **Send** button in the upper right of the message window to send the email.
+    - Select the **Send (4)** button in the upper right of the message window to send the email.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-50.png)
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s31.png)
 
 1. You should receive a message that the email was undeliverable and blocked by a DLP policy.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-51.png)
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s32.png)
 
 You've confirmed that your DLP policy blocked the transmission of sensitive employee IDs through email.
 
