@@ -8,9 +8,6 @@ In this lab, you will perform the following:
 
 - Task 01: Use DSPM for AI to create a DLP policy for generative AI sites
 - Task 02: Create an insider risk policy to detect risky AI interactions
-<!------ Commenting out until tenant bug issues are resolved
-- Task 03: Block Copilot from accessing labeled content
--->
 - Task 03: Run a data assessment to detect unlabeled content
 
 ## Task 1 – Use DSPM for AI to create a DLP policy for generative AI sites
@@ -204,7 +201,5 @@ In this lab, you have completed the following tasks:
 
 - Use DSPM for AI to create a DLP policy for generative AI sites
 - Create an insider risk policy to detect risky AI interactions
-<!------ 
-- Block Copilot from accessing labeled content
--->
+
 - Run a data assessment to detect unlabeled content
