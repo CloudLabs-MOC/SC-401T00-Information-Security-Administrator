@@ -53,16 +53,25 @@ To add another layer of enforcement, you can use insider risk levels to restrict
    
      This postpones MFA enforcement for the tenant and allows you to proceed with the lab.
 
-1. In the Microsoft Entra admin center, navigate to **Protection** > **Conditional Access** > **Policies**.
+1. In the Microsoft Entra admin center, navigate to **Conditional Access (1)** > **Policies (2)**. On the **Policies** page, select **+ New policy (3)**.
 
-1. On the **Policies** page, select **+ New policy**.
+   ![](../Media/s36.png)
 
 1. On the **New policy** page, name your policy: `Block all access for elevated risk`.
 
-1. Under **Assignments**, configure the **Users** section:
+   ![](../Media/s37.png)
 
-   - **Include**: All users  
-   - **Exclude**: `Joni Sherman` and `ODL User`
+1. Under **Assignments**, select the **Users** section **(1)**:
+
+   - **Include**: `All users` **(2)**
+
+     ![](../Media/s38.png)     
+
+   - **Exclude (1)**: Select **Users amd groups (2)** 
+
+      ![](../Media/s39.png)
+      
+   - Select `Joni Sherman` and `ODL User` and then click **Select**
 
 1. Under **Target resources**, confirm the dropdown is set to **Resources (formerly cloud apps)** and select **All resources (formerly 'All cloud apps')**.
 
