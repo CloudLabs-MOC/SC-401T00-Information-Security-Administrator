@@ -60,6 +60,9 @@ You've assigned eDiscovery permissions to Joni Sherman, enabling her to search f
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="TenantDomainName" enableCopy="false" /></inject>**.
 
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
+
 1. In Microsoft Purview, navigate to **Solutions (1)** > **eDiscovery (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod6-ex1-15.png)

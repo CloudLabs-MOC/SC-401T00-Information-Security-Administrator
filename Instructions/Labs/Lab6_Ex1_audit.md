@@ -14,7 +14,10 @@ In this lab, you will perform the following:
 
 In this task, you'll use the Microsoft Purview Audit solution to search for recent audit events related to DLP policy and rules.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="TenantDomainName" enableCopy="false" /></inject>**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **Joni S**.
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. In Microsoft Purview, navigate to **Solutions (1)** > **Audit (2)**.
 
