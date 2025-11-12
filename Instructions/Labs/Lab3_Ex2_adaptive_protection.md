@@ -17,15 +17,17 @@ In this lab, you will perform the following:
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
    - **Password:** **<inject key="User 01 Password"></inject>**
 
-1. In the Microsoft Purview portal, navigate to **Solutions** > **Insider Risk Management** > **Adaptive Protection**.
+1. In the Microsoft Purview portal, navigate to **Solutions (1)** > **Insider Risk Management (2)** > **Adaptive Protection (3)**.
 
-1. From the left navigation pane, select **Insider risk levels**.
+   ![Screenshot showing how to configure target resources in Conditional Access.](../Media/s33.png)
 
-1. On the **Insider risk levels** page:
+1. From the left navigation pane, select **Insider risk levels (1)**. On the **Insider risk levels** page:
 
-   - In the Insider risk policy dropdown, select the **Data leaks quick policy** you created in a previous exercise.
+   - In the Insider risk policy dropdown, select the **Data leaks quick policy (2)** you created in a previous exercise.
    - Leave the default risk level settings unchanged.
-   - Select **Save**.
+   - Select **Save (3)**.
+
+     ![Screenshot showing how to configure target resources in Conditional Access.](../Media/s35.png)   
 
 You've linked an insider risk policy to Adaptive Protection, enabling dynamic risk-based actions across Microsoft Purview.
 
@@ -40,15 +42,16 @@ To add another layer of enforcement, you can use insider risk levels to restrict
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-> [!note] **Note**: In some tenants, you might see a Portal MFA Enforcement prompt when signing in. If this prompt appears:
-> - Select **Postpone MFA** to temporarily delay MFA setup.
->
->   ![Screenshot showing the option to postpone MFA.](../Media/postpone-mfa.png)
-> - Select **Confirm postponement**.
->
-> - Select **Continue sign-in without MFA** to access Microsoft Entra.
->
-> This postpones MFA enforcement for the tenant and allows you to proceed with the lab.
+     >**Note**: In some tenants, you might see a Portal MFA Enforcement prompt when signing in. If this prompt appears:
+
+    - Select **Postpone MFA** to temporarily delay MFA setup.
+     
+      ![Screenshot showing the option to postpone MFA.](../Media/postpone-mfa.png)
+
+   - Select **Confirm postponement**.
+   - Select **Continue sign-in without MFA** to access Microsoft Entra.
+   
+     This postpones MFA enforcement for the tenant and allows you to proceed with the lab.
 
 1. In the Microsoft Entra admin center, navigate to **Protection** > **Conditional Access** > **Policies**.
 

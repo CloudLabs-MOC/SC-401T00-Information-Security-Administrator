@@ -64,7 +64,7 @@ You've assigned Joni the necessary permissions to work with Insider Risk Managem
 
 Before you create an insider risk policy, you'll turn on the indicators needed for detection. These indicators define the types of risky activity the system will look for.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="TenantDomainName" enableCopy="false" /></inject>**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS**.
 
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**
    - **Password:** **<inject key="User 01 Password"></inject>**
