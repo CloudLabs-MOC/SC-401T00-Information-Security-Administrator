@@ -35,7 +35,7 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
     ![Screenshot showing the Start recording user and admin activity button.](../Media/enable-audit-button.png)
 
-     >**Note**: If you don’t see the **Start recording user and admin activity** bar, it means it’s already enabled. Please proceed to the next task.
+     >**Note**: If you don’t see the **Start recording user and admin activity** bar, please wait for sometime. Keep refreshing the portal.
 
 1. Once you select this option, the blue bar should disappear from this page.
 
