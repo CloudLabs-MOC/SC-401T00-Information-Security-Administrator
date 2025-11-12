@@ -119,7 +119,7 @@ In this task, you'll create a DLP policy in simulation mode that targets credit 
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-4.png)
 
-1. On the **Start with a template or create a custom policy** page, select **Custom** as the category, then select **Custom policy** under **Regulations**. Then select **Next**.
+1. On the **Start with a template or create a custom policy** page, select **Custom (1)** as the category, then select **Custom policy (2)** under **Regulations**. Then select **Next (3)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-5.png)
 

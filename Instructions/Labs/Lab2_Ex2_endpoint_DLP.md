@@ -139,18 +139,28 @@ In this task, you'll create a DLP policy that blocks the transfer of sensitive i
 
 1. You should still be logged into **LabVM**, signed in as demouser account.
 
-1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as Joni Sherman.
+1. You should still be at the **Devices** page in the Microsoft Purview portal, logged in as **Joni Sherman**.
 
-1. In the Microsoft Purview portal, select **Solutions** > **Data Loss Prevention**.
+1. In the Microsoft Purview portal, select **Solutions (1)** > **Data Loss Prevention**.
 
-1. From the left, navigation pane, select **Policies** then select **+ Create policy**.
+    - From the left, navigation pane, select **Policies (2)** then select **+ Create policy (3)**.
 
-1. On the **Start with a template or create a custom policy** page, select **Custom** and **Custom policy**, then select **Next**.
+      ![](../Media/s30.png)    
 
-1. On the **Name your DLP policy** page, provide the details then select **Next**:
+1. On the **Choose what type of data to protect** page, select **Data stored in connected sources** then select **Next**.
 
-    - **Name**: `Block USB transfers`
-    - **Description**: `Prevent transferring sensitive data to USB devices.`
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-4.png)      
+
+1. On the **Start with a template or create a custom policy** page, select **Custom (1)** as the category, then select **Custom policy (2)** under **Regulations**. Then select **Next (3)**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/lab2-5.png)
+
+1. On the **Name your DLP policy** page, provide the details then select **Next (3)**:
+
+    - **Name**: `Block USB transfers` **(1)**
+    - **Description**: `Prevent transferring sensitive data to USB devices.` **(2)**
+
+      ![](../Media/s28.png)    
 
 1. On the **Assign admin units** page, select **Next**.
 
@@ -174,7 +184,7 @@ In this task, you'll create a DLP policy that blocks the transfer of sensitive i
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-19.png)
 
 1. In the new **Content contains** section:
-    - Select **Add** > **Sensitive info types**.
+    - Select **Add (1)** > **Sensitive info types (2)**.
 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-20.png)
 
@@ -183,6 +193,8 @@ In this task, you'll create a DLP policy that blocks the transfer of sensitive i
        - `U.S. Social Security Number (SSN)`
        - `U.S. Driver's License Number`
        - `Contoso Employee IDs`
+
+         ![](../Media/s29.png)       
 
 1. Under **Actions**, select **+ Add an action (1)** > **Audit or restrict activities on devices (2)**.
 
