@@ -58,7 +58,7 @@ You've assigned eDiscovery permissions to Joni Sherman, enabling her to search f
 
 ## Task 2 – Search for content using sensitive financial terms
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="TenantDomainName" enableCopy="false" /></inject>**.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS**.
 
    - **Email/Username:** **<inject key="User 01 UPN"></inject>**.
    - **Password:** **<inject key="User 01 Password"></inject>**
