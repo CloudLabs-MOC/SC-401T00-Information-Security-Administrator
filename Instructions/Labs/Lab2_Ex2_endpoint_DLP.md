@@ -120,10 +120,12 @@ In this task, you'll onboard a Windows 11 device so it's ready to be protected b
 
       ![](../Media/s25.png)
 
-1. You will be back into **LabVM**.In **Microsoft Edge**, navigate to **Microsoft Purview portal** by going to `https://purview.microsoft.com`. Log in as  Administrator, using below credentials:
+1. You will be back into LabVM, signed in as demouser.
 
-    - Username: **<inject key="AzureAdUserEmail" enableCopy="false"/>**
-    - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>**
+1. Navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**. Sign in as Joni Sherman using below credentials:
+
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**
+   - **Password:** **<inject key="User 01 Password"></inject>**
 
 1. Select **Settings (1)** from the left sidebar. On the left sidebar, expand **Device onboarding (2)**, then select **Devices (3)**. Refresh this page and verify the device has been successfully onboarded **(4)**.
 
