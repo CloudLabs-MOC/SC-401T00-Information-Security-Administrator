@@ -118,7 +118,50 @@ Next, you'll create a policy that helps detect risky prompt behavior in Copilot.
 
 You've created a policy that detects risky AI interactions, including prompts and responses, to help identify early signs of risky user behavior.
 
-<!------ 
+ 
+## Task 3 – Run a data risk assessment to detect unlabeled content
+
+To understand potential gaps in labeling coverage, you'll run a data risk assessment to identify files without sensitivity labels that may be accessed by Copilot.
+
+1. In Microsoft Purview, navigate to **DSPM for AI** by selecting **Solutions** > **DSPM for AI** > **Recommendations**.
+
+1. Select the **Protect sensitive data referenced in Copilot and agent responses (1)** recommendation.
+
+   - In the **Protect sensitive data referenced in Copilot and agent responses** pane, review the summary, then select **Go to assessments (2)**.
+
+     ![](../Media/s59.png)
+
+1. On the **Data risk assessments** page, select **Create custom assessment**
+
+1. On the **Basic details** page, enter:
+
+   - **Name**: `Unlabeled File Exposure Assessment`
+   - **Description**: `Identifies files without sensitivity labels that may be exposed in Microsoft 365 Copilot responses and provides recommendations to reduce oversharing risks.`
+
+1. Select **Next**.
+
+1. On the **Add users** page, select **All**, then select **Next**.
+
+1. On the **Add data sources to assess** page, leave the default location of **SharePoint** selected, then select **Next**.
+
+1. On the **Review and run the data assessment scan** page, select **Save and run**.
+
+1. On the **Data assessment successfully created** page, select **Done**.
+
+You've now used Microsoft Purview DSPM for AI to detect AI-related risks, enforce policies, and assess sensitive data exposure, helping your organization use AI securely.
+
+## Review
+
+In this lab, you have completed the following tasks:
+
+- Use DSPM for AI to create a DLP policy for generative AI sites
+- Create an insider risk policy to detect risky AI interactions
+
+- Run a data assessment to detect unlabeled content
+
+
+<!------ Commenting out 
+
 ## Task 3 – Block Copilot from accessing labeled content
 
 You can further reduce risk by preventing Copilot from processing or responding with content protected by sensitivity labels.
@@ -162,44 +205,5 @@ You can further reduce risk by preventing Copilot from processing or responding 
 1. Select the **Protect sensitive data referenced in Microsoft 365 Copilot and agents (preview)** recommendation and select **Mark as complete**.
 
 You've created a DLP policy that prevents labeled content from being used in Copilot prompts and responses.
+
 -->
-
-## Task 3 – Run a data risk assessment to detect unlabeled content
-
-To understand potential gaps in labeling coverage, you'll run a data risk assessment to identify files without sensitivity labels that may be accessed by Copilot.
-
-1. In Microsoft Purview, navigate to **DSPM for AI** by selecting **Solutions** > **DSPM for AI** > **Recommendations**.
-
-1. Select the **Protect sensitive data referenced in Copilot and agent responses (1)** recommendation.
-
-   - In the **Protect sensitive data referenced in Copilot and agent responses** pane, review the summary, then select **Go to assessments (2)**.
-
-     ![](../Media/s59.png)
-
-1. On the **Data risk assessments** page, select **Create custom assessment**
-
-1. On the **Basic details** page, enter:
-
-   - **Name**: `Unlabeled File Exposure Assessment`
-   - **Description**: `Identifies files without sensitivity labels that may be exposed in Microsoft 365 Copilot responses and provides recommendations to reduce oversharing risks.`
-
-1. Select **Next**.
-
-1. On the **Add users** page, select **All**, then select **Next**.
-
-1. On the **Add data sources to assess** page, leave the default location of **SharePoint** selected, then select **Next**.
-
-1. On the **Review and run the data assessment scan** page, select **Save and run**.
-
-1. On the **Data assessment successfully created** page, select **Done**.
-
-You've now used Microsoft Purview DSPM for AI to detect AI-related risks, enforce policies, and assess sensitive data exposure, helping your organization use AI securely.
-
-## Review
-
-In this lab, you have completed the following tasks:
-
-- Use DSPM for AI to create a DLP policy for generative AI sites
-- Create an insider risk policy to detect risky AI interactions
-
-- Run a data assessment to detect unlabeled content
