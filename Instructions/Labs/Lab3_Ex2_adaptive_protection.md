@@ -75,19 +75,23 @@ To add another layer of enforcement, you can use insider risk levels to restrict
 
 1. Under **Target resources**, confirm the dropdown is set to **Resources (formerly cloud apps)** and select **All resources (formerly 'All cloud apps')**.
 
-     ![Screenshot showing how to configure target resources in Conditional Access.](../Media/ca-target-resources.png)
+   ![](../Media/s42.png)
 
-1. Under **Conditions**, select **Insider risk**. Set **Configure** to **Yes**, then set the risk level to **Elevated**.
+1. Under **Conditions (1)**, select **Insider risk (2)**. Set **Configure** to **Yes (3)**, then set the risk level to **Elevated (4)**. Select **Done (5)**.
 
-     ![Screenshot showing insider risk configuration in Conditional Access.](../Media/ca-insider-risk-levels.png)
+   ![](../Media/s43.png)
 
-1. Under **Access controls**, select **Grant**. Choose **Block access**, then select **Select** at the bottom of the flyout.
+1. Under **Access controls**, select **Grant (1)**. Choose **Block access (2)**, then select **Select (3)** at the bottom of the flyout.
 
-     ![Screenshot showing where to block access in Conditional Access.](../Media/ca-block-access.png)
+   ![](../Media/s44.png)
 
 1. At the bottom of the page, confirm **Enable policy** is set to **Report-only**, then select **Create**.
 
-1. Back on the **Policies** page for Conditional Access, select **Refresh** to verify your newly created policy appears.
+   ![](../Media/s40.png)
+
+1. Back on the **Policies (1)** page for Conditional Access, select **Refresh** to verify your newly created policy appears **(2)**.
+
+   ![](../Media/s41.png)
 
 1. Sign out of the Mod Administrator account by selecting the MA icon on the top right of the window, then selecting **Sign out** and close all browser windows.
 
