@@ -217,7 +217,7 @@ You've successfully enabled Defender for Endpoint to share alerts with Microsoft
 
 In this task, you'll configure the policy indicators and create a priority user group that can be used in insider risk policies.
 
-  >**Note:**  Microsoft Defender for Endpoint indicators might appear greyed out and unselectable if the integration from the previous task hasn't finished processing. If that happens, wait a few minutes and refresh the page before continuing.
+  >**Note:**  **Microsoft Defender for Endpoint indicators might appear greyed out and unselectable if the integration from the previous task hasn't finished processing. If that happens, wait a few minutes and refresh the page before continuing**.
 
 1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com`.
 
@@ -244,8 +244,8 @@ In this task, you'll configure the policy indicators and create a priority user 
 
 1. On the **Name and describe the priority user group** page, enter:
 
-   - **Name**: `Finance team (1)`
-   - **Description**: `Team members who manage financial operations, budgeting, and payroll systems. (2)`
+   - **Name**: `Finance team` **(1)**
+   - **Description**: `Team members who manage financial operations, budgeting, and payroll systems` **(2)**
    - Select **Next (3)**.
 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task6-6.png)
@@ -280,20 +280,19 @@ In this task, you'll create an insider risk policy that detects Defender for End
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-2.png)
 
-
 1. On the **Name your policy** page, enter:
 
-   - **Name**: `Security policy violations - Priority users (1)`
-   - **Description**: `Detects Defender for Endpoint alerts for risky activity by priority users, such as malware or disabled protections. (2)`
+   - **Name**: `Security policy violations - Priority users` **(1)**
+   - **Description**: `Detects Defender for Endpoint alerts for risky activity by priority users, such as malware or disabled protections.` **(2)**
    - Select **Next (3)**.
 
         ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-3.png)
 
 1. On the **Choose users, groups, & adaptive scopes** page, select **+ Add or edit priority user groups (1)**.
 
-1. On the **Choose priority user groups** flyout, select the checkbox for the **Finance team (2)** group, then select **Add (3)**. Select **Next (4)**.
+    - On the **Choose priority user groups** flyout, select the checkbox for the **Finance team (2)** group, then select **Add (3)**. Select **Next (4)**.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-4.png)
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task7-4.png)
 
 1. On the **Decide whether to prioritize content** page, select **Next**.
 
@@ -328,6 +327,8 @@ In this task, you'll create a notice template in Microsoft Purview to notify use
 1. In Microsoft Purview, select **Solutions (1)** > **Insider Risk Management (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task8-1.png)
+
+1. Keep refreshing the portal, until you find all the options in the toolbar.
 
 1. Click on **Notice templates (1)** from the options available in the **Insider Risk Management** toolbar. On the **Notice templates** page, select **+ Create notice template (2)**.
 
