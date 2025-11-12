@@ -322,7 +322,7 @@ In this task, you'll install the Microsoft Purview Extension in Google Chrome to
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-46.png)
 
-1. Validate the **Microsoft Purview Extension** is visible and activated.
+1. Navigate to `chrome://extensions` and make sure the **Microsoft Purview Extension** is visible and activated.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/ex2-lab1-47.png)
 
