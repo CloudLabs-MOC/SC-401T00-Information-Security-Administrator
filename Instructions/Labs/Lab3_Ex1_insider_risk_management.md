@@ -40,7 +40,7 @@ In this task, you'll assign Joni Sherman the Insider Risk Management role so she
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-6.png)
 
-1. On the **Choose users** flyout panel, search for **Joni (1)** then select the checkbox for **Joni Sherman (2)**.
+1. On the **Choose users** flyout panel, search for **Joni (1)** and hit **Enter**. Then select the checkbox for **Joni Sherman (2)**.
 Select the **Select (3)** button at the bottom of the panel.
 On the **Edit members of the role group** page select **Next (4)**.
 
@@ -54,7 +54,6 @@ On the **Edit members of the role group** page select **Next (4)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-05.png)
 
-
 1. Sign out of the **Administrator** account by selecting the **01 (1)** icon on the top right of the window, then selecting **Sign out (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task1-7.png)
@@ -67,14 +66,17 @@ Before you create an insider risk policy, you'll turn on the indicators needed f
 
 1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign into the Microsoft Purview portal as **JoniS@<inject key="TenantDomainName" enableCopy="false" /></inject>**.
 
+   - **Email/Username:** **<inject key="User 01 UPN"></inject>**
+   - **Password:** **<inject key="User 01 Password"></inject>**
+
 1. Select **Settings (1)** > **Insider risk management (2)**. Select the tab on the left for **Policy indicators (3)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex2-task1-2.png)
 
 1. On the **Policy indicators** page, expand and select **Select all** to enable all indicators in these categories:
 
-   - Office indicators
-   - Cumulative exfiltration detection
+   - **Office indicators**
+   - **Cumulative exfiltration detection**
 
       ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex2-task1-5.png)
 
@@ -102,7 +104,7 @@ In this task, you'll create a data leaks quick policy to automatically detect an
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-3.png)
 
-1. Review the settings for creating a quick data leak policy, update **Policy name** as **Data leaks quick (1) policy** then select **Create policy (2)**.
+1. Review the settings for creating a quick data leak policy, update **Policy name** as **Data leaks quick policy (1)** then select **Create policy (2)**.
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task3-4.png)
 
@@ -125,9 +127,9 @@ On the **Policies** page for **Insider Risk Management**, you'll notice your dat
 
 1. Select the **Data leaks quick policy (1)** you just created.
 
-1. Review the recommendation in the flyout page for the policy. You have a warning stating **Sequence trigger required indicators are not selected (2)**. To resolve this warning, select **Edit policy (3)**.
+    - Review the recommendation in the flyout page for the policy. You have a warning stating **Sequence trigger required indicators are not selected (2)**. To resolve this warning, select **Edit policy (3)**.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-1.png)
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task4-1.png)
 
 1. On the **Choose a policy template** page, let the page load completely then select **Next**.
 
@@ -205,9 +207,9 @@ In this task, you'll enable integration between Microsoft Defender for Endpoint 
 
 1. Under **Advanced features (1)**, scroll down and select the toggle to **On (2)** to **Share endpoint alerts with Microsoft Compliance Center**.
 
-1. Select **Save preferences (3)** at the bottom of the screen.
+    - Select **Save preferences (3)** at the bottom of the screen.
 
-    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task5-2.png)
+      ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod3-ex1-task5-2.png)
 
 You've successfully enabled Defender for Endpoint to share alerts with Microsoft Purview.
 
