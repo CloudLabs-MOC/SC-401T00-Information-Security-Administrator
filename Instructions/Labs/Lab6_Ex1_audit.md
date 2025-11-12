@@ -20,6 +20,14 @@ In this task, you'll use the Microsoft Purview Audit solution to search for rece
 
     ![Screenshot showing the files matching dropdown with the internal option added.](../Media/mod6-ex1-4.png)
 
+1. Select **Start recording user and admin activity**.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s45.png)
+
+1. Select **Yes** to complete set up.
+
+    ![Screenshot showing the files matching dropdown with the internal option added.](../Media/s46.png)
+
 1. On the **Search** page, configure your search:
 
    - **Date and time range (UTC)**:
